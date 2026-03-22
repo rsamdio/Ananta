@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://ananta2026.netlify.app/* https://ananta.rsamdio.org/:splat 301!
