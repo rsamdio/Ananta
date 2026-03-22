@@ -1,0 +1,250 @@
+/* Custom Styles for ANANTA 2026 */
+
+:root {
+    --color-navy-deep: #05051a;
+    --color-purple-deep: #0f051a;
+    --color-gold-royal: #d4af37;
+    --color-blue-vibrant: #007bff;
+}
+
+body {
+    background: radial-gradient(circle at top right, #1a0b2e 0%, #05051a 100%);
+    scroll-behavior: smooth;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.gold-gradient-text {
+    background: linear-gradient(to right, #d4af37, #f9e29f, #d4af37);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    to { background-position: 200% center; }
+}
+
+.btn-primary {
+    background-color: var(--color-gold-royal);
+    color: var(--color-navy-deep);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 20px;
+    padding: 1.25rem 2.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.4);
+}
+
+.btn-secondary {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 20px;
+    padding: 1.25rem 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--color-navy-deep);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+.flag-item {
+    margin: 0 1rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 20px;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.flag-item:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.flag-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.flag-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 20px 40px -10px rgba(212, 175, 55, 0.3);
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-navy-deep);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(212, 175, 55, 0.5);
+}
+
+/* Mobile Menu Transition */
+#mobile-menu {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-3d-animation {
+    animation: float3d 6s ease-in-out infinite;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    will-change: transform, filter;
+}
+
+@keyframes float3d {
+    0% {
+        transform: translateY(0px) rotateX(5deg) rotateY(-5deg);
+        filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.4));
+    }
+    50% {
+        transform: translateY(-25px) rotateX(-5deg) rotateY(10deg) scale(1.02);
+        filter: drop-shadow(0 40px 50px rgba(212, 175, 55, 0.7)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+    }
+    100% {
+        transform: translateY(0px) rotateX(5deg) rotateY(-5deg);
+        filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.4));
+    }
+}
+
+.intro-logo-3d {
+    animation: intro3d 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards, float3d 6s ease-in-out infinite 2.5s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+@keyframes intro3d {
+    0% {
+        transform: scale(0.3) translateZ(-500px) rotateX(45deg) rotateY(45deg);
+        opacity: 0;
+        filter: drop-shadow(0 0 0 rgba(212, 175, 55, 0));
+    }
+    100% {
+        transform: scale(1) translateZ(0) rotateX(5deg) rotateY(-5deg);
+        opacity: 1;
+        filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.4));
+    }
+}
+
+/* Legacy gallery carousel — responsive scroll + touch */
+#gallery-carousel.gallery-carousel {
+    scroll-padding-inline: max(1rem, env(safe-area-inset-left, 0px));
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+}
+
+#gallery-carousel.gallery-carousel .gallery-slide {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+@media (min-width: 768px) {
+    #gallery-carousel.gallery-carousel {
+        scroll-padding-inline: 1.5rem;
+    }
+}
+
+/* Gallery & Lightbox Styles */
+#gallery-grid > div {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#gallery-grid > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px -12px rgba(212, 175, 55, 0.2);
+}
+
+#lightbox {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; backdrop-filter: blur(0px); }
+    to { opacity: 1; backdrop-filter: blur(24px); }
+}
+
+#lightbox-img {
+    animation: zoomIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.floating-stat {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
