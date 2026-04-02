@@ -1,0 +1,27 @@
+# ANANTA 2026 — information for AI systems and assistants
+
+Contact-for-summary: This file describes the public marketing site only. For authoritative Rotary/Rotaract policies, use official Rotary International sources.
+
+## Site
+Primary URL: https://ananta.rsamdio.org/
+Language: en-IN (India, English)
+
+## What this site is about
+ANANTA 2026 is the 17th Rotaract South Asia MDIO (RSA MDIO) Installation Ceremony, held with ROAR Awards, May 30–31, 2026 in Bengaluru, Karnataka, India.
+
+## Organization
+Rotaract South Asia MDIO (RSA MDIO)
+Official organization site: https://rsamdio.org/
+
+## Registration (delegates)
+Official registration URL: https://go.rsamdio.org/ananta
+
+## Venue (as stated on the site)
+Ramada by Wyndham Bengaluru Yelahanka — Doddaballapur Road, Yelahanka, Bengaluru 560064, India
+
+## Machine-readable details
+Structured data (JSON-LD) for WebSite, Organization, Event, FAQPage, HowTo, and BreadcrumbList is embedded in the HTML of https://ananta.rsamdio.org/
+
+## Discovery
+Sitemap: https://ananta.rsamdio.org/sitemap.xml
+Robots: https://ananta.rsamdio.org/robots.txt

@@ -27,11 +27,62 @@ body {
     background-clip: text;
     color: transparent;
     background-size: 200% auto;
-    animation: shine 4s linear infinite;
+    animation: shine 14s linear infinite;
 }
 
 @keyframes shine {
     to { background-position: 200% center; }
+}
+
+/* Hero: soft ambient blobs, very slow drift (replaces Tailwind animate-pulse on large blurs) */
+@keyframes heroAmbient {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+.hero-ambient {
+    animation: heroAmbient 14s ease-in-out infinite;
+}
+
+.hero-ambient--delayed {
+    animation-delay: -7s;
+}
+
+/* Intro splash: quick fade + scale only (no 3D / second motion stack) */
+.intro-logo-reveal {
+    animation: introReveal 0.5s cubic-bezier(0.25, 1, 0.45, 1) forwards;
+    opacity: 0;
+}
+
+@keyframes introReveal {
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Main hero logo: static glow + optional gentle float */
+.hero-logo {
+    filter: drop-shadow(0 14px 28px rgba(212, 175, 55, 0.38));
+    animation: heroLogoFloat 10s ease-in-out infinite;
+}
+
+@keyframes heroLogoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.chevron-hint {
+    animation: chevronHint 2.4s ease-in-out infinite;
+}
+
+@keyframes chevronHint {
+    0%, 100% { transform: translate(-50%, 0); opacity: 0.45; }
+    50% { transform: translate(-50%, 6px); opacity: 0.7; }
 }
 
 .btn-primary {
@@ -73,7 +124,7 @@ body {
 }
 
 .animate-marquee {
-    animation: marquee 40s linear infinite;
+    animation: marquee 55s linear infinite;
 }
 
 .animate-marquee:hover {
@@ -117,7 +168,7 @@ body {
 }
 
 .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 10s ease-in-out infinite;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -152,45 +203,10 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Legacy class kept if referenced elsewhere — same as hero treatment */
 .logo-3d-animation {
-    animation: float3d 6s ease-in-out infinite;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    will-change: transform, filter;
-}
-
-@keyframes float3d {
-    0% {
-        transform: translateY(0px) rotateX(5deg) rotateY(-5deg);
-        filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.4));
-    }
-    50% {
-        transform: translateY(-25px) rotateX(-5deg) rotateY(10deg) scale(1.02);
-        filter: drop-shadow(0 40px 50px rgba(212, 175, 55, 0.7)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
-    }
-    100% {
-        transform: translateY(0px) rotateX(5deg) rotateY(-5deg);
-        filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.4));
-    }
-}
-
-.intro-logo-3d {
-    animation: intro3d 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards, float3d 6s ease-in-out infinite 2.5s;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-}
-
-@keyframes intro3d {
-    0% {
-        transform: scale(0.3) translateZ(-500px) rotateX(45deg) rotateY(45deg);
-        opacity: 0;
-        filter: drop-shadow(0 0 0 rgba(212, 175, 55, 0));
-    }
-    100% {
-        transform: scale(1) translateZ(0) rotateX(5deg) rotateY(-5deg);
-        opacity: 1;
-        filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.4));
-    }
+    filter: drop-shadow(0 14px 28px rgba(212, 175, 55, 0.38));
+    animation: heroLogoFloat 10s ease-in-out infinite;
 }
 
 /* Legacy gallery carousel — responsive scroll + touch */
@@ -246,5 +262,29 @@ body {
 
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gold-gradient-text,
+    .hero-ambient,
+    .hero-ambient--delayed,
+    .hero-logo,
+    .logo-3d-animation,
+    .intro-logo-reveal,
+    .chevron-hint,
+    .animate-float,
+    .floating-stat,
+    .animate-marquee {
+        animation: none !important;
+    }
+
+    .intro-logo-reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+    .gold-gradient-text {
+        background-position: center;
+    }
 }

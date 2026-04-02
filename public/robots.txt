@@ -1,0 +1,5 @@
+# https://ananta.rsamdio.org/
+User-agent: *
+Allow: /
+
+Sitemap: https://ananta.rsamdio.org/sitemap.xml
