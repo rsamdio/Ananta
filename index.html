@@ -205,7 +205,8 @@
     }
     </script>
     
-    <link rel="preload" as="image" href="/public/ananta-logo.webp" type="image/webp">
+    <!-- Nav/footer mark (~15KB); full 1024px asset loads for intro/hero/social via img tags -->
+    <link rel="preload" as="image" href="/public/ananta-logo-nav.webp" type="image/webp">
     <link rel="dns-prefetch" href="https://unpkg.com">
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -227,7 +228,7 @@
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-6">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center gap-6">
-                <img src="/public/ananta-logo.webp" alt="Ananta Logo" width="1024" height="1024" class="h-12 md:h-16 w-auto hover:scale-110 transition-transform duration-300" referrerPolicy="no-referrer">
+                <img src="/public/ananta-logo-nav.webp" alt="Ananta Logo" width="256" height="256" class="h-12 md:h-16 w-auto hover:scale-110 transition-transform duration-300" decoding="async" fetchpriority="high" referrerPolicy="no-referrer">
                 <div class="hidden lg:block">
                     <span class="text-xl font-black gold-gradient-text block leading-none">ANANTA</span>
                     <span class="text-[10px] uppercase tracking-tighter text-white/60">RSA MDIO Installation</span>
@@ -631,7 +632,7 @@
                 <!-- Leader 4 -->
                 <div class="group" data-aos="fade-up">
                     <div class="relative aspect-[3/4] rounded-[32px] overflow-hidden mb-6 shadow-2xl">
-                        <img src="/public/sanjay.webp" alt="Rtn. Rtr. Sanjay R" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" referrerPolicy="no-referrer">
+                        <img src="/public/sanjay.webp" alt="Rtn. Rtr. Sanjay R" width="960" height="1707" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" referrerPolicy="no-referrer">
                         <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-60"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <div class="w-10 h-10 rounded-full bg-gold-royal/90 flex items-center justify-center text-navy-deep scale-0 group-hover:scale-100 transition-transform duration-300">
@@ -1137,7 +1138,7 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-16 mb-20">
                 <div class="space-y-8">
-                    <img src="/public/ananta-logo.webp" alt="Ananta Logo" width="1024" height="1024" class="h-16 w-auto hover:scale-110 transition-transform duration-300" referrerPolicy="no-referrer">
+                    <img src="/public/ananta-logo-nav.webp" alt="Ananta Logo" width="256" height="256" loading="lazy" decoding="async" class="h-16 w-auto hover:scale-110 transition-transform duration-300" referrerPolicy="no-referrer">
                     <p class="text-white/65 leading-relaxed font-normal">
                         Witnessing the transition of leadership at the 17th RSA MDIO Installation Ceremony. Join us in Bengaluru for an unforgettable experience.
                     </p>
