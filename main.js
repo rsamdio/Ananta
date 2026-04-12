@@ -3,11 +3,6 @@
 
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  function refreshIcons(root) {
-    if (typeof lucide === 'undefined' || !lucide.createIcons || !lucide.icons) return;
-    lucide.createIcons({ icons: lucide.icons, root: root || document });
-  }
-
   if (typeof AOS !== 'undefined' && !prefersReducedMotion) {
     AOS.init({
       once: true,
@@ -17,8 +12,6 @@
       delay: 0,
     });
   }
-
-  refreshIcons();
 
   function loadGtag() {
     if (window.__anantaGtagLoaded) return;
@@ -214,7 +207,6 @@
     lightboxDesc.innerText = desc;
     lightbox.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
-    refreshIcons(lightbox);
   };
 
   window.closeLightbox = function () {
