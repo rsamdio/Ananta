@@ -1,0 +1,15 @@
+# Netlify: cache static media (no build step — HTML/CSS/JS only)
+/media/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/patterns/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/public/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=2592000
+
+/*.svg
+  Cache-Control: public, max-age=2592000

@@ -12,6 +12,18 @@ body {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    body {
+        scroll-behavior: auto;
+    }
+}
+
+/* Self-hosted texture (replaces transparenttextures.com) */
+.bg-carbon-texture {
+    background-image: url('/patterns/carbon-fibre.webp');
+    background-repeat: repeat;
+}
+
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
