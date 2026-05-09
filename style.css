@@ -428,3 +428,39 @@ body {
     }
 }
 
+/* Premium Responsive Section Headings */
+.section-title {
+    font-size: 3rem !important; /* text-5xl equivalent */
+    line-height: 1.2 !important;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.25rem !important; /* text-4xl equivalent */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.875rem !important; /* text-3xl equivalent */
+    }
+}
+
+/* Premium Responsive Global Presence Title */
+.global-title {
+    font-size: 2.25rem !important; /* text-4xl equivalent */
+    line-height: 1.2 !important;
+}
+
+@media (max-width: 768px) {
+    .global-title {
+        font-size: 1.875rem !important; /* text-3xl equivalent */
+    }
+}
+
+@media (max-width: 480px) {
+    .global-title {
+        font-size: 1.5rem !important; /* text-2xl equivalent */
+    }
+}
+
