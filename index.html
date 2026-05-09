@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANANTA 2026 - 17th RSA MDIO Installation Ceremony</title>
+
+    <!-- Preload critical above-the-fold assets -->
+    <link rel="preload" href="/public/ananta-logo.webp" as="image" type="image/webp">
+    <link rel="preload" href="/public/ananta-logo-nav.webp" as="image" type="image/webp">
 
     <!-- Favicon & app icons (same mark as header: /public/ananta-logo.webp) -->
     <link rel="icon" href="/public/ananta-logo.webp" type="image/webp" sizes="1024x1024">
@@ -12,8 +17,10 @@
     <link rel="shortcut icon" href="/public/ananta-logo.webp" type="image/webp">
 
     <!-- SEO: primary metadata -->
-    <meta name="description" content="Official site for ANANTA 2026—the 17th Rotaract South Asia MDIO Installation Ceremony, May 30–31, 2026 in Bengaluru. Event schedule, Team Ananta, Ramada by Wyndham Yelahanka venue, and registration for RSA MDIO and ROAR 2026.">
-    <meta name="keywords" content="ANANTA 2026, RSA MDIO, Rotaract South Asia MDIO, Installation Ceremony, Rotaract, Bengaluru, Karnataka, ROAR 2026, Ramada Yelahanka, Rotary, Team Ananta">
+    <meta name="description"
+        content="Official site for ANANTA 2026—the 17th Rotaract South Asia MDIO Installation Ceremony, May 30–31, 2026 in Bengaluru. Event schedule, Team Ananta, Ramada by Wyndham Yelahanka venue, and registration for RSA MDIO and ROAR 2026.">
+    <meta name="keywords"
+        content="ANANTA 2026, RSA MDIO, Rotaract South Asia MDIO, Installation Ceremony, Rotaract, Bengaluru, Karnataka, ROAR 2026, Ramada Yelahanka, Rotary, Team Ananta">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="RSA MDIO">
     <meta name="publisher" content="Rotaract South Asia MDIO">
@@ -28,7 +35,8 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ANANTA 2026">
     <meta property="og:title" content="ANANTA 2026 — 17th RSA MDIO Installation Ceremony">
-    <meta property="og:description" content="May 30–31, 2026 · Bengaluru. Join the Rotaract South Asia MDIO for the 17th Installation Ceremony and ROAR 2026. Register and explore schedule, team, and venue.">
+    <meta property="og:description"
+        content="May 30–31, 2026 · Bengaluru. Join the Rotaract South Asia MDIO for the 17th Installation Ceremony and ROAR 2026. Register and explore schedule, team, and venue.">
     <meta property="og:url" content="https://ananta.rsamdio.org/">
     <meta property="og:locale" content="en_IN">
     <meta property="og:image" content="https://ananta.rsamdio.org/public/ananta-logo.webp">
@@ -41,7 +49,8 @@
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ANANTA 2026 — 17th RSA MDIO Installation Ceremony">
-    <meta name="twitter:description" content="May 30–31, 2026 · Bengaluru. Rotaract South Asia MDIO Installation & ROAR 2026. Register at ananta.rsamdio.org.">
+    <meta name="twitter:description"
+        content="May 30–31, 2026 · Bengaluru. Rotaract South Asia MDIO Installation & ROAR 2026. Register at ananta.rsamdio.org.">
     <meta name="twitter:image" content="https://ananta.rsamdio.org/public/ananta-logo.webp">
     <meta name="twitter:image:alt" content="ANANTA 2026 — event logo">
 
@@ -204,7 +213,7 @@
       ]
     }
     </script>
-    
+
     <!-- Nav/footer mark (~15KB); full 1024px asset loads for intro/hero/social via img tags -->
     <link rel="preload" as="image" href="/public/ananta-logo-nav.webp" type="image/webp">
     <link rel="dns-prefetch" href="https://unpkg.com">
@@ -215,20 +224,28 @@
 
     <link rel="stylesheet" href="tailwind-built.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.2">
 </head>
-<body class="bg-navy-deep text-white font-sans selection:bg-gold-royal selection:text-navy-deep antialiased overflow-x-hidden">
+
+<body
+    class="bg-navy-deep text-white font-sans selection:bg-gold-royal selection:text-navy-deep antialiased overflow-x-hidden">
 
     <!-- Intro Overlay -->
-    <div id="intro-overlay" class="fixed inset-0 z-[100] bg-navy-deep flex items-center justify-center transition-opacity duration-300 ease-out" role="status" aria-live="polite" aria-busy="true" aria-label="Loading">
-        <img id="intro-logo" src="/public/ananta-logo.webp" alt="Ananta Logo" width="1024" height="1024" class="w-64 md:w-96 h-auto intro-logo-reveal" decoding="async" fetchpriority="high" referrerPolicy="no-referrer">
+    <div id="intro-overlay"
+        class="fixed inset-0 z-[100] bg-navy-deep flex items-center justify-center transition-opacity duration-300 ease-out"
+        role="status" aria-live="polite" aria-busy="true" aria-label="Loading">
+        <img id="intro-logo" src="/public/ananta-logo.webp" alt="Ananta Logo" width="1024" height="1024"
+            class="w-64 md:w-96 h-auto intro-logo-reveal" decoding="async" fetchpriority="high"
+            referrerPolicy="no-referrer">
     </div>
 
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent py-6">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center gap-6">
-                <img src="/public/ananta-logo-nav.webp" alt="Ananta Logo" width="256" height="256" class="h-12 md:h-16 w-auto hover:scale-110 transition-transform duration-300" decoding="async" fetchpriority="high" referrerPolicy="no-referrer">
+                <img src="/public/ananta-logo-nav.webp" alt="Ananta Logo" width="256" height="256"
+                    class="h-12 md:h-16 w-auto hover:scale-110 transition-transform duration-300" decoding="async"
+                    fetchpriority="high" referrerPolicy="no-referrer">
                 <div class="hidden lg:block">
                     <span class="text-xl font-black gold-gradient-text block leading-none">ANANTA</span>
                     <span class="text-[10px] uppercase tracking-tighter text-white/60">RSA MDIO Installation</span>
@@ -237,418 +254,479 @@
 
             <!-- Desktop Nav -->
             <div class="hidden md:flex items-center gap-8">
-                <a href="#home" class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Home</a>
-                <a href="#about" class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">About</a>
-                <a href="#leadership" class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Team</a>
-                <a href="#schedule" class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Schedule</a>
-                <a href="#venue" class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Venue</a>
-                <a href="#faq" class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">FAQ</a>
-                <a href="#register" class="btn-primary !px-6 !py-2 text-sm flex items-center justify-center">Register</a>
+                <a href="#home"
+                    class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Home</a>
+                <a href="#about"
+                    class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">About</a>
+                <a href="#leadership"
+                    class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Team</a>
+                <a href="#schedule"
+                    class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Schedule</a>
+                <a href="#venue"
+                    class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">Venue</a>
+                <a href="#faq"
+                    class="text-sm font-bold uppercase tracking-widest hover:text-gold-royal transition-colors">FAQ</a>
+                <a href="#register"
+                    class="btn-primary !px-6 !py-2 text-sm flex items-center justify-center">Register</a>
             </div>
 
             <!-- Mobile Menu Toggle -->
-            <button type="button" id="menu-toggle" class="md:hidden text-white" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            <button type="button" id="menu-toggle" class="md:hidden text-white p-3 -mr-3 flex items-center justify-center hover:text-gold-royal transition-colors" aria-label="Open menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-8 h-8">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
             </button>
         </div>
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-navy-deep p-8 flex flex-col hidden transform translate-x-full transition-transform duration-300">
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[60] bg-navy-deep p-8 flex flex-col hidden transform translate-x-full transition-transform duration-300">
         <div class="flex justify-end mb-12">
-            <button type="button" id="menu-close" class="text-white" aria-label="Close menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <button type="button" id="menu-close" class="text-white p-3 -mr-3 flex items-center justify-center hover:text-gold-royal transition-colors" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-10 h-10">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
             </button>
         </div>
         <div class="flex flex-col gap-8 text-center">
-            <a href="#home" class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Home</a>
-            <a href="#about" class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">About</a>
-            <a href="#leadership" class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Team</a>
-            <a href="#schedule" class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Schedule</a>
-            <a href="#venue" class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Venue</a>
-            <a href="#faq" class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">FAQ</a>
-            <a href="#register" class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Register</a>
+            <a href="#home"
+                class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Home</a>
+            <a href="#about"
+                class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">About</a>
+            <a href="#leadership"
+                class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Team</a>
+            <a href="#schedule"
+                class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Schedule</a>
+            <a href="#venue"
+                class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Venue</a>
+            <a href="#faq"
+                class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">FAQ</a>
+            <a href="#register"
+                class="mobile-link text-2xl font-black uppercase tracking-widest hover:text-gold-royal">Register</a>
             <button class="btn-primary mt-4">Register Now</button>
         </div>
     </div>
 
     <main id="main-content" role="main">
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-4">
-        <div class="absolute inset-0 z-0 overflow-hidden">
-            <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-vibrant/20 rounded-full blur-[160px] hero-ambient"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/15 rounded-full blur-[160px] hero-ambient hero-ambient--delayed"></div>
-            <div class="absolute inset-0 bg-carbon-texture opacity-10"></div>
-        </div>
-        
-        <div class="container mx-auto text-center relative z-10">
-            <div data-aos="fade-up" data-aos-duration="650" data-aos-easing="ease-out-cubic">
-                <div class="flex flex-col items-center justify-center mb-16 relative">
-                    <!-- Spotlight (static — avoids constant repaints from pulse) -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gold-royal/18 rounded-full blur-[100px] -z-10"></div>
-                    
-                    <!-- Logo -->
-                    <img src="/public/ananta-logo.webp" alt="Ananta Logo" width="1024" height="1024" class="w-72 md:w-[500px] z-10 hero-logo relative" referrerPolicy="no-referrer">
-                    
-                    <!-- Glowing Pedestal -->
-                    <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[250px] md:w-[400px] h-[10px] md:h-[20px] bg-gold-royal/50 rounded-[100%] blur-[15px] -z-10"></div>
-                    <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[150px] md:w-[200px] h-[5px] md:h-[10px] bg-white/60 rounded-[100%] blur-[5px] -z-10"></div>
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-4">
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <div
+                    class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-vibrant/20 rounded-full blur-[160px] hero-ambient">
                 </div>
-                <h1 class="text-2xl md:text-4xl font-normal tracking-[0.3em] uppercase mb-4 text-blue-200">
-                    Experience the <span class="font-black text-white">Limitless</span>
-                </h1>
-                <div class="flex items-center justify-center gap-4 mb-8">
-                    <div class="h-px w-12 bg-gold-royal/50"></div>
-                    <p class="text-gold-royal font-bold tracking-widest uppercase">May 30 - 31, 2026 | Bengaluru</p>
-                    <div class="h-px w-12 bg-gold-royal/50"></div>
+                <div
+                    class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/15 rounded-full blur-[160px] hero-ambient hero-ambient--delayed">
                 </div>
-                
-                <!-- Countdown Timer -->
-                <div id="countdown" class="flex gap-4 md:gap-8 justify-center mt-12">
-                    <div class="text-center">
-                        <div id="days" class="glass-card w-16 h-16 md:w-24 md:h-24 flex items-center justify-center text-2xl md:text-4xl font-black text-gold-royal mb-2">0</div>
-                        <p class="text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Days</p>
-                    </div>
-                    <div class="text-center">
-                        <div id="hours" class="glass-card w-16 h-16 md:w-24 md:h-24 flex items-center justify-center text-2xl md:text-4xl font-black text-gold-royal mb-2">0</div>
-                        <p class="text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Hours</p>
-                    </div>
-                    <div class="text-center">
-                        <div id="minutes" class="glass-card w-16 h-16 md:w-24 md:h-24 flex items-center justify-center text-2xl md:text-4xl font-black text-gold-royal mb-2">0</div>
-                        <p class="text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Mins</p>
-                    </div>
-                    <div class="text-center">
-                        <div id="seconds" class="glass-card w-16 h-16 md:w-24 md:h-24 flex items-center justify-center text-2xl md:text-4xl font-black text-gold-royal mb-2">0</div>
-                        <p class="text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Secs</p>
-                    </div>
-                </div>
-
-                <div class="mt-16 flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <a href="https://go.rsamdio.org/ananta" target="_blank" rel="noopener noreferrer" class="btn-primary flex items-center gap-3 group">
-                        Register Now <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                    </a>
-                    <button class="btn-secondary">
-                        Download Brochure
-                    </button>
-                </div>
+                <div class="absolute inset-0 bg-carbon-texture opacity-10"></div>
             </div>
-            
-            <div class="absolute -bottom-10 left-1/2 chevron-hint">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white/65"><path d="m6 9 6 6 6-6"/></svg>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-32 px-4 relative overflow-hidden">
-        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-gold-royal/5 rounded-full blur-[120px]"></div>
-        <div class="container mx-auto">
-            <div class="grid lg:grid-cols-1 max-w-4xl mx-auto gap-20 items-center">
-                <div data-aos="fade-up">
-                    <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight italic text-center">
-                        Ananta 2026: <br>
-                        <span class="gold-gradient-text">Creating Lasting Impact, Together.</span>
-                    </h2>
-                    
-                    <div class="space-y-10 text-white/70 text-lg leading-relaxed font-normal">
-                        <div class="text-center">
-                            <h3 class="text-2xl font-bold text-gold-royal mb-4 uppercase tracking-wider">The Stage Is Set</h3>
-                            <p class="mb-4">
-                                Bengaluru serves as the perfect backdrop for this historic transition, representing the fusion of tradition and digital transformation. In the heart of India’s Silicon Valley, we aren’t just witnessing a change in leadership—we are witnessing an evolution.
-                            </p>
-                            <p>
-                                As we stand at the threshold of a new era, ANANTA 2026 brings together the brightest minds of the RSA MDIO. This 17th Installation Ceremony is more than just a formal event; it is a celebration of leadership, service, and the infinite potential of Rotaract.
-                            </p>
+            <div class="container mx-auto text-center relative z-10">
+                <div data-aos="fade-up" data-aos-duration="650" data-aos-easing="ease-out-cubic">
+                    <div class="flex flex-col items-center justify-center mb-16 relative">
+                        <!-- Spotlight (static — avoids constant repaints from pulse) -->
+                        <div
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gold-royal/18 rounded-full blur-[100px] -z-10">
                         </div>
 
-                        <div class="glass-card p-8 md:p-12 border-gold-royal/30 bg-gradient-to-br from-white/5 to-gold-royal/5 relative overflow-hidden mt-16 mb-16">
-                            <div class="absolute top-0 right-0 w-64 h-64 bg-gold-royal/20 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-vibrant/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
-                            
-                            <h3 class="text-3xl font-black text-gold-royal mb-6 uppercase tracking-widest text-center italic relative z-10">A Visionary Handover</h3>
-                            <p class="mb-12 text-center text-xl font-normal relative z-10">
-                                The legacy of RSA MDIO takes a bold leap forward as we officially install our incoming leader:
+                        <!-- Logo -->
+                        <img src="/public/ananta-logo.webp" alt="Ananta Logo" width="1024" height="1024"
+                            class="w-72 md:w-[500px] z-10 hero-logo relative" referrerPolicy="no-referrer">
+
+                        <!-- Glowing Pedestal -->
+                        <div
+                            class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[250px] md:w-[400px] h-[10px] md:h-[20px] bg-gold-royal/50 rounded-[100%] blur-[15px] -z-10">
+                        </div>
+                        <div
+                            class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[150px] md:w-[200px] h-[5px] md:h-[10px] bg-white/60 rounded-[100%] blur-[5px] -z-10">
+                        </div>
+                    </div>
+                    <h1 class="text-2xl md:text-4xl font-normal tracking-[0.3em] uppercase mb-4 text-blue-200">
+                        Experience the <span class="font-black text-white">Limitless</span>
+                    </h1>
+                    <div class="flex items-center justify-center gap-4 mb-8 px-4">
+                        <div class="hidden sm:block h-px w-12 bg-gold-royal/50"></div>
+                        <p class="text-gold-royal font-bold tracking-widest uppercase text-xs sm:text-sm md:text-base text-center">May 30 - 31, 2026 | Bengaluru</p>
+                        <div class="hidden sm:block h-px w-12 bg-gold-royal/50"></div>
+                    </div>
+
+                    <!-- Countdown Timer -->
+                    <div id="countdown" class="flex gap-3 sm:gap-4 md:gap-8 justify-center mt-12 px-2">
+                        <div class="text-center">
+                            <div id="days"
+                                class="glass-card w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-4xl font-black text-gold-royal mb-2">
+                                0</div>
+                            <p class="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Days</p>
+                        </div>
+                        <div class="text-center">
+                            <div id="hours"
+                                class="glass-card w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-4xl font-black text-gold-royal mb-2">
+                                0</div>
+                            <p class="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Hours
                             </p>
-                            
-                            <div class="flex flex-col md:flex-row items-center justify-center gap-12 mb-8 relative z-10">
-                                <div class="relative group mx-auto md:mx-0">
-                                    <!-- Glowing aura behind the image -->
-                                    <div class="absolute inset-0 bg-gold-royal/40 blur-[60px] rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-700"></div>
-                                    
-                                    <!-- Elegant Arched Frame -->
-                                    <div class="relative w-72 h-[24rem] md:w-96 md:h-[32rem] rounded-t-full rounded-b-[2.5rem] overflow-hidden border-4 border-gold-royal/50 shadow-[0_0_40px_rgba(212,175,55,0.3)] group-hover:border-gold-royal transition-all duration-700 z-10 bg-gradient-to-b from-white/5 to-navy-deep/80 backdrop-blur-md">
-                                        <img src="/public/arun.webp" alt="Rtn. Rtr. Arun Teja Godavarthi" width="960" height="1200" loading="lazy" decoding="async" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
-                                        
-                                        <!-- Bottom gradient to blend the image background into the dark theme -->
-                                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent pointer-events-none"></div>
+                        </div>
+                        <div class="text-center">
+                            <div id="minutes"
+                                class="glass-card w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-4xl font-black text-gold-royal mb-2">
+                                0</div>
+                            <p class="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Mins</p>
+                        </div>
+                        <div class="text-center">
+                            <div id="seconds"
+                                class="glass-card w-14 h-14 sm:w-16 sm:h-16 md:w-24 md:h-24 flex items-center justify-center text-xl sm:text-2xl md:text-4xl font-black text-gold-royal mb-2">
+                                0</div>
+                            <p class="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-white/70 font-bold">Secs</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 flex justify-center items-center">
+                        <a href="https://go.rsamdio.org/ananta" target="_blank" rel="noopener noreferrer"
+                            class="btn-primary flex items-center gap-3 group">
+                            Register Now <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="w-5 h-5 group-hover:translate-x-1 transition-transform">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="absolute -bottom-10 left-1/2 chevron-hint">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="w-8 h-8 text-white/65">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 px-4 relative overflow-hidden">
+            <div
+                class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-gold-royal/5 rounded-full blur-[120px]">
+            </div>
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-1 max-w-4xl mx-auto gap-20 items-center">
+                    <div data-aos="fade-up">
+                        <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight italic text-center">
+                            Ananta 2026: <br>
+                            <span class="gold-gradient-text">Creating Lasting Impact, Together.</span>
+                        </h2>
+
+                        <div class="space-y-10 text-white/70 text-lg leading-relaxed font-normal">
+                            <div class="text-center">
+                                <h3 class="text-2xl font-bold text-gold-royal mb-4 uppercase tracking-wider">The Stage
+                                    Is Set</h3>
+                                <p class="mb-4">
+                                    Bengaluru serves as the perfect backdrop for this historic transition, representing
+                                    the fusion of tradition and digital transformation. In the heart of India’s Silicon
+                                    Valley, we aren’t just witnessing a change in leadership—we are witnessing an
+                                    evolution.
+                                </p>
+                                <p>
+                                    As we stand at the threshold of a new era, ANANTA 2026 brings together the brightest
+                                    minds of the RSA MDIO. This 17th Installation Ceremony is more than just a formal
+                                    event; it is a celebration of leadership, service, and the infinite potential of
+                                    Rotaract.
+                                </p>
+                            </div>
+
+                            <div
+                                class="glass-card p-8 md:p-12 border-gold-royal/30 bg-gradient-to-br from-white/5 to-gold-royal/5 relative overflow-hidden mt-16 mb-16">
+                                <div
+                                    class="absolute top-0 right-0 w-64 h-64 bg-gold-royal/20 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2">
+                                </div>
+                                <div
+                                    class="absolute bottom-0 left-0 w-64 h-64 bg-blue-vibrant/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2">
+                                </div>
+
+                                <h3
+                                    class="text-3xl font-black text-gold-royal mb-6 uppercase tracking-widest text-center italic relative z-10">
+                                    A Visionary Handover</h3>
+                                <p class="mb-12 text-center text-xl font-normal relative z-10">
+                                    The legacy of RSA MDIO takes a bold leap forward as we officially install our
+                                    incoming leader:
+                                </p>
+
+                                <div
+                                    class="flex flex-col md:flex-row items-center justify-center gap-12 mb-8 relative z-10">
+                                    <div class="relative group mx-auto md:mx-0">
+                                        <!-- Glowing aura behind the image -->
+                                        <div
+                                            class="absolute inset-0 bg-gold-royal/40 blur-[60px] rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-700">
+                                        </div>
+
+                                        <!-- Elegant Arched Frame -->
+                                        <div
+                                            class="relative w-72 h-[24rem] md:w-96 md:h-[32rem] rounded-t-full rounded-b-[2.5rem] overflow-hidden border-4 border-gold-royal/50 shadow-[0_0_40px_rgba(212,175,55,0.3)] group-hover:border-gold-royal transition-all duration-700 z-10 bg-gradient-to-b from-white/5 to-navy-deep/80 backdrop-blur-md">
+                                            <img src="/public/arun.webp" alt="Rtn. Rtr. Arun Teja Godavarthi"
+                                                width="960" height="1200" loading="lazy" decoding="async"
+                                                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110">
+
+                                            <!-- Bottom gradient to blend the image background into the dark theme -->
+                                            <div
+                                                class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent pointer-events-none">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center md:text-left max-w-md">
+                                        <p class="text-4xl font-black text-white mb-2 tracking-tight">Rtn. Rtr. Arun
+                                            Teja Godavarthi</p>
+                                        <p class="text-gold-royal font-bold text-lg uppercase tracking-widest mb-6">
+                                            President, RY 2026-27, RSAMDIO</p>
+                                        <div class="w-16 h-1 bg-gold-royal mb-6 mx-auto md:mx-0"></div>
+                                        <p class="text-white/80 text-lg leading-relaxed">
+                                            Taking over the office with a mandate for innovation, Rtr. Arun Teja is
+                                            committed to fostering a culture of excellence. His vision ensures that
+                                            every participant leaves Bengaluru inspired to create lasting, "limitless"
+                                            change in their communities.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="text-center md:text-left max-w-md">
-                                    <p class="text-4xl font-black text-white mb-2 tracking-tight">Rtn. Rtr. Arun Teja Godavarthi</p>
-                                    <p class="text-gold-royal font-bold text-lg uppercase tracking-widest mb-6">President, RY 2026-27, RSAMDIO</p>
-                                    <div class="w-16 h-1 bg-gold-royal mb-6 mx-auto md:mx-0"></div>
-                                    <p class="text-white/80 text-lg leading-relaxed">
-                                        Taking over the office with a mandate for innovation, Rtr. Arun Teja is committed to fostering a culture of excellence. His vision ensures that every participant leaves Bengaluru inspired to create lasting, "limitless" change in their communities.
-                                    </p>
-                                </div>
                             </div>
-                        </div>
 
-                        <div class="text-center">
-                            <h3 class="text-2xl font-bold text-gold-royal mb-4 uppercase tracking-wider">The ROAR Awards: A Night of Excellence</h3>
-                            <p class="mb-4">
-                                The celebration of impact doesn’t end with the ceremony. On the same night, we transition from the prestige of the Installation to the high-energy pulse of the ROAR Awards.
-                            </p>
-                            <p class="mb-8">
-                                This is our moment to recognize the fiercest "lions" of the movement. We will honor the outstanding projects, tireless service, and the remarkable milestones achieved by Rotaractors over the past year. It’s a night of glitz, gratitude, and gold.
-                            </p>
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <h3 class="text-2xl font-bold text-gold-royal mb-4 uppercase tracking-wider">The ROAR
+                                    Awards: A Night of Excellence</h3>
+                                <p class="mb-4">
+                                    The celebration of impact doesn’t end with the ceremony. On the same night, we
+                                    transition from the prestige of the Installation to the high-energy pulse of the
+                                    ROAR Awards.
+                                </p>
+                                <p class="mb-8">
+                                    This is our moment to recognize the fiercest "lions" of the movement. We will honor
+                                    the outstanding projects, tireless service, and the remarkable milestones achieved
+                                    by Rotaractors over the past year. It’s a night of glitz, gratitude, and gold.
+                                </p>
+                                <!-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                 <img src="/media/awards/award1.webp" alt="Award 1" width="400" height="300" class="w-full h-48 object-cover rounded-2xl border border-white/10" decoding="async" loading="lazy">
                                 <img src="/media/awards/award2.webp" alt="Award 2" width="400" height="300" class="w-full h-48 object-cover rounded-2xl border border-white/10" decoding="async" loading="lazy">
                                 <img src="/media/awards/award3.webp" alt="Award 3" width="400" height="300" class="w-full h-48 object-cover rounded-2xl border border-white/10" decoding="async" loading="lazy">
+                            </div> -->
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorative Divider -->
+        <div
+            class="w-full py-4 bg-gold-royal text-navy-deep overflow-hidden flex items-center border-y border-gold-royal/50 relative z-20">
+            <div class="flex whitespace-nowrap animate-marquee font-black uppercase tracking-widest text-sm">
+                <span class="mx-4">• ANANTA 2026</span>
+                <span class="mx-4">• LIMITLESS</span>
+                <span class="mx-4">• RSA MDIO</span>
+                <span class="mx-4">• BENGALURU</span>
+                <span class="mx-4">• 17TH INSTALLATION</span>
+                <span class="mx-4">• ROAR AWARDS</span>
+                <span class="mx-4">• ANANTA 2026</span>
+                <span class="mx-4">• LIMITLESS</span>
+                <span class="mx-4">• RSA MDIO</span>
+                <span class="mx-4">• BENGALURU</span>
+                <span class="mx-4">• 17TH INSTALLATION</span>
+                <span class="mx-4">• ROAR AWARDS</span>
+                <span class="mx-4">• ANANTA 2026</span>
+                <span class="mx-4">• LIMITLESS</span>
+                <span class="mx-4">• RSA MDIO</span>
+                <span class="mx-4">• BENGALURU</span>
+                <span class="mx-4">• 17TH INSTALLATION</span>
+                <span class="mx-4">• ROAR AWARDS</span>
+            </div>
+        </div>
+
+        <!-- Legacy Gallery Section -->
+        <section id="legacy" class="py-32 px-4 bg-black/20 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full bg-carbon-texture opacity-5"></div>
+            <div class="container mx-auto">
+                <div class="text-center mb-24" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 italic">Legacy & <span
+                            class="gold-gradient-text">Excellence</span></h2>
+                    <p class="text-white/65 text-lg max-w-2xl mx-auto">Relive the moments of prestige and celebration
+                        from our previous RSA MDIO Installations and ROAR Awards.</p>
+                </div>
+
+
+                <!-- Interactive Element: Floating Stats -->
+                <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center" data-aos="fade-up">
+                        <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">45</p>
+                        <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Districts</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up">
+                        <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">8</p>
+                        <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Countries</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up">
+                        <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">50k+</p>
+                        <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Rotaractors</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up">
+                        <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">17th</p>
+                        <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Installation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox"
+            class="fixed inset-0 z-[100] bg-navy-deep/95 backdrop-blur-2xl hidden flex items-center justify-center p-4 md:p-10">
+            <button type="button" onclick="closeLightbox()"
+                class="absolute top-10 right-10 text-white hover:text-gold-royal transition-colors"
+                aria-label="Close gallery">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-12 h-12">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </button>
+            <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+                <div
+                    class="relative aspect-square md:aspect-auto md:h-[70vh] rounded-[40px] overflow-hidden glass-card p-2">
+                    <img id="lightbox-img" src="" class="w-full h-full object-cover rounded-[32px]" alt="Gallery Image"
+                        referrerPolicy="no-referrer">
+                </div>
+                <div class="space-y-8">
+                    <h3 id="lightbox-title" class="text-4xl md:text-6xl font-black italic gold-gradient-text"></h3>
+                    <p id="lightbox-desc" class="text-xl text-white/60 leading-relaxed font-normal"></p>
+                    <div class="pt-8 border-t border-white/10">
+                        <button onclick="closeLightbox()" class="btn-primary">Back to Gallery</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Decorative Divider -->
-    <div class="w-full py-4 bg-gold-royal text-navy-deep overflow-hidden flex items-center border-y border-gold-royal/50 relative z-20">
-        <div class="flex whitespace-nowrap animate-marquee font-black uppercase tracking-widest text-sm">
-            <span class="mx-4">• ANANTA 2026</span>
-            <span class="mx-4">• LIMITLESS</span>
-            <span class="mx-4">• RSA MDIO</span>
-            <span class="mx-4">• BENGALURU</span>
-            <span class="mx-4">• 17TH INSTALLATION</span>
-            <span class="mx-4">• ROAR AWARDS</span>
-            <span class="mx-4">• ANANTA 2026</span>
-            <span class="mx-4">• LIMITLESS</span>
-            <span class="mx-4">• RSA MDIO</span>
-            <span class="mx-4">• BENGALURU</span>
-            <span class="mx-4">• 17TH INSTALLATION</span>
-            <span class="mx-4">• ROAR AWARDS</span>
-            <span class="mx-4">• ANANTA 2026</span>
-            <span class="mx-4">• LIMITLESS</span>
-            <span class="mx-4">• RSA MDIO</span>
-            <span class="mx-4">• BENGALURU</span>
-            <span class="mx-4">• 17TH INSTALLATION</span>
-            <span class="mx-4">• ROAR AWARDS</span>
-        </div>
-    </div>
-
-    <!-- Legacy Gallery Section -->
-    <section id="legacy" class="py-32 px-4 bg-black/20 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full bg-carbon-texture opacity-5"></div>
-        <div class="container mx-auto">
-            <div class="text-center mb-24" data-aos="fade-up">
-                <h2 class="text-5xl font-black mb-6 italic">Legacy & <span class="gold-gradient-text">Excellence</span></h2>
-                <p class="text-white/65 text-lg max-w-2xl mx-auto">Relive the moments of prestige and celebration from our previous RSA MDIO Installations and ROAR Awards.</p>
-            </div>
-
-            <div class="relative group/carousel -mx-4 sm:-mx-6 lg:mx-0">
-                <div id="gallery-carousel"
-                     class="gallery-carousel flex overflow-x-auto gap-4 sm:gap-5 md:gap-6 pb-8 pt-4 px-4 sm:px-6 lg:px-2 scrollbar-hide"
-                     style="scroll-behavior: smooth;"
-                     role="region"
-                     aria-roledescription="carousel"
-                     aria-label="Legacy installation and ROAR Awards gallery">
-                    <!-- Carousel Item 1 -->
-                    <div class="gallery-slide group relative w-[clamp(15.5rem,calc(100vw-2.5rem),min(90vw,22rem))] md:w-[clamp(17rem,calc(50vw-1.5rem),28rem)] lg:w-[clamp(18rem,calc(42vw-1.25rem),32rem)] xl:w-[clamp(19rem,calc(33vw-1rem),36rem)] 2xl:w-[clamp(20rem,calc(28vw-0.75rem),40rem)] overflow-hidden rounded-3xl sm:rounded-[40px] glass-card p-1.5 sm:p-2 cursor-pointer shrink-0" onclick="openLightbox('/media/gallery/installation-full.webp', 'RSA MDIO Installation Ceremony', 'A legacy of leadership transition and excellence.')">
-                        <div class="aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-[32px]">
-                            <img src="/media/gallery/installation-card.webp" width="720" height="540" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="RSA MDIO Installation">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-4 sm:p-6 md:p-10 pointer-events-none">
-                            <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-gold-royal font-black text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 italic">RSA MDIO Installation</p>
-                                <p class="text-white/70 text-sm sm:text-base">Witnessing the transition of power and purpose.</p>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 sm:top-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white w-5 h-5 sm:w-6 sm:h-6"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                        </div>
-                    </div>
-
-                    <!-- Carousel Item 2 -->
-                    <div class="gallery-slide group relative w-[clamp(15.5rem,calc(100vw-2.5rem),min(90vw,22rem))] md:w-[clamp(17rem,calc(50vw-1.5rem),28rem)] lg:w-[clamp(18rem,calc(42vw-1.25rem),32rem)] xl:w-[clamp(19rem,calc(33vw-1rem),36rem)] 2xl:w-[clamp(20rem,calc(28vw-0.75rem),40rem)] overflow-hidden rounded-3xl sm:rounded-[40px] glass-card p-1.5 sm:p-2 cursor-pointer shrink-0" onclick="openLightbox('/media/gallery/roar-full.webp', 'ROAR Awards Night', 'Celebrating the fiercest lions of the Rotaract movement.')">
-                        <div class="aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-[32px]">
-                            <img src="/media/gallery/roar-card.webp" width="720" height="540" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="ROAR Awards">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-4 sm:p-6 md:p-10 pointer-events-none">
-                            <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-gold-royal font-black text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 italic">ROAR Awards Night</p>
-                                <p class="text-white/70 text-sm sm:text-base">A celebration of impact and service.</p>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 sm:top-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white w-5 h-5 sm:w-6 sm:h-6"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                        </div>
-                    </div>
-
-                    <!-- Carousel Item 3 -->
-                    <div class="gallery-slide group relative w-[clamp(15.5rem,calc(100vw-2.5rem),min(90vw,22rem))] md:w-[clamp(17rem,calc(50vw-1.5rem),28rem)] lg:w-[clamp(18rem,calc(42vw-1.25rem),32rem)] xl:w-[clamp(19rem,calc(33vw-1rem),36rem)] 2xl:w-[clamp(20rem,calc(28vw-0.75rem),40rem)] overflow-hidden rounded-3xl sm:rounded-[40px] glass-card p-1.5 sm:p-2 cursor-pointer shrink-0" onclick="openLightbox('/media/gallery/moment1-full.webp', 'Leadership Moments', 'The core of RSA MDIO is its people.')">
-                        <div class="aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-[32px]">
-                            <img src="/media/gallery/moment1-card.webp" width="720" height="540" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Leadership">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-4 sm:p-6 md:p-10 pointer-events-none">
-                            <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-gold-royal font-black text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 italic">Leadership Moments</p>
-                                <p class="text-white/70 text-sm sm:text-base">The core of RSA MDIO is its people.</p>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 sm:top-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white w-5 h-5 sm:w-6 sm:h-6"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                        </div>
-                    </div>
-
-                    <!-- Carousel Item 4 -->
-                    <div class="gallery-slide group relative w-[clamp(15.5rem,calc(100vw-2.5rem),min(90vw,22rem))] md:w-[clamp(17rem,calc(50vw-1.5rem),28rem)] lg:w-[clamp(18rem,calc(42vw-1.25rem),32rem)] xl:w-[clamp(19rem,calc(33vw-1rem),36rem)] 2xl:w-[clamp(20rem,calc(28vw-0.75rem),40rem)] overflow-hidden rounded-3xl sm:rounded-[40px] glass-card p-1.5 sm:p-2 cursor-pointer shrink-0" onclick="openLightbox('/media/gallery/moment2-full.webp', 'Cultural Heritage', 'Embracing the diversity of RSA nations.')">
-                        <div class="aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-[32px]">
-                            <img src="/media/gallery/moment2-card.webp" width="720" height="540" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Culture">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-4 sm:p-6 md:p-10 pointer-events-none">
-                            <div class="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                                <p class="text-gold-royal font-black text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 italic">Cultural Heritage</p>
-                                <p class="text-white/70 text-sm sm:text-base">Embracing the diversity of RSA nations.</p>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 sm:top-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white w-5 h-5 sm:w-6 sm:h-6"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" x2="14" y1="3" y2="10"/><line x1="3" x2="10" y1="21" y2="14"/></svg>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Navigation Buttons: always visible on touch/small screens; subtle on md+ until hover -->
-                <button type="button" onclick="scrollGalleryTrack(-1)" aria-label="Previous slide" class="absolute left-1 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 sm:h-12 sm:w-12 md:h-14 md:w-14 items-center justify-center rounded-full border border-white/10 bg-navy-deep/90 text-white shadow-xl backdrop-blur-md transition-all hover:bg-gold-royal hover:text-navy-deep opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"><path d="m15 18-6-6 6-6"/></svg>
-                </button>
-                <button type="button" onclick="scrollGalleryTrack(1)" aria-label="Next slide" class="absolute right-1 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 flex h-11 w-11 sm:h-12 sm:w-12 md:h-14 md:w-14 items-center justify-center rounded-full border border-white/10 bg-navy-deep/90 text-white shadow-xl backdrop-blur-md transition-all hover:bg-gold-royal hover:text-navy-deep opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"><path d="m9 18 6-6-6-6"/></svg>
-                </button>
-            </div>
-            
-            <!-- Interactive Element: Floating Stats -->
-            <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center" data-aos="fade-up">
-                    <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">45</p>
-                    <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Districts</p>
-                </div>
-                <div class="text-center" data-aos="fade-up">
-                    <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">8</p>
-                    <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Countries</p>
-                </div>
-                <div class="text-center" data-aos="fade-up">
-                    <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">50k+</p>
-                    <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Rotaractors</p>
-                </div>
-                <div class="text-center" data-aos="fade-up">
-                    <p class="text-4xl md:text-6xl font-black gold-gradient-text mb-2">17th</p>
-                    <p class="text-white/65 uppercase tracking-widest text-xs font-bold">Installation</p>
-                </div>
+        <!-- Decorative Divider -->
+        <div
+            class="w-full py-4 bg-white/5 text-gold-royal overflow-hidden flex items-center border-y border-white/10 relative z-20 backdrop-blur-md">
+            <div class="flex whitespace-nowrap animate-marquee font-black uppercase tracking-widest text-sm"
+                style="animation-direction: reverse;">
+                <span class="mx-4">• VISIONARY LEADERSHIP</span>
+                <span class="mx-4">• ROTARACT</span>
+                <span class="mx-4">• EMPOWERMENT</span>
+                <span class="mx-4">• SERVICE ABOVE SELF</span>
+                <span class="mx-4">• FELLOWSHIP</span>
+                <span class="mx-4">• VISIONARY LEADERSHIP</span>
+                <span class="mx-4">• ROTARACT</span>
+                <span class="mx-4">• EMPOWERMENT</span>
+                <span class="mx-4">• SERVICE ABOVE SELF</span>
+                <span class="mx-4">• FELLOWSHIP</span>
+                <span class="mx-4">• VISIONARY LEADERSHIP</span>
+                <span class="mx-4">• ROTARACT</span>
+                <span class="mx-4">• EMPOWERMENT</span>
+                <span class="mx-4">• SERVICE ABOVE SELF</span>
+                <span class="mx-4">• FELLOWSHIP</span>
             </div>
         </div>
-    </section>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 z-[100] bg-navy-deep/95 backdrop-blur-2xl hidden flex items-center justify-center p-4 md:p-10">
-        <button type="button" onclick="closeLightbox()" class="absolute top-10 right-10 text-white hover:text-gold-royal transition-colors" aria-label="Close gallery">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-12 h-12"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        </button>
-        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
-            <div class="relative aspect-square md:aspect-auto md:h-[70vh] rounded-[40px] overflow-hidden glass-card p-2">
-                <img id="lightbox-img" src="" class="w-full h-full object-cover rounded-[32px]" alt="Gallery Image" referrerPolicy="no-referrer">
-            </div>
-            <div class="space-y-8">
-                <h3 id="lightbox-title" class="text-4xl md:text-6xl font-black italic gold-gradient-text"></h3>
-                <p id="lightbox-desc" class="text-xl text-white/60 leading-relaxed font-normal"></p>
-                <div class="pt-8 border-t border-white/10">
-                    <button onclick="closeLightbox()" class="btn-primary">Back to Gallery</button>
+        <!-- Leadership Section -->
+        <section id="leadership" class="py-32 bg-black/40 relative">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div class="max-w-xl">
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 italic">Team <span class="gold-gradient-text">Ananta</span>
+                        </h2>
+                        <p class="text-white/70 text-lg">Meet the leaders driving the transition and shaping the future
+                            of RSA MDIO for the year 2026-27.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Decorative Divider -->
-    <div class="w-full py-4 bg-white/5 text-gold-royal overflow-hidden flex items-center border-y border-white/10 relative z-20 backdrop-blur-md">
-        <div class="flex whitespace-nowrap animate-marquee font-black uppercase tracking-widest text-sm" style="animation-direction: reverse;">
-            <span class="mx-4">• VISIONARY LEADERSHIP</span>
-            <span class="mx-4">• ROTARACT</span>
-            <span class="mx-4">• EMPOWERMENT</span>
-            <span class="mx-4">• SERVICE ABOVE SELF</span>
-            <span class="mx-4">• FELLOWSHIP</span>
-            <span class="mx-4">• VISIONARY LEADERSHIP</span>
-            <span class="mx-4">• ROTARACT</span>
-            <span class="mx-4">• EMPOWERMENT</span>
-            <span class="mx-4">• SERVICE ABOVE SELF</span>
-            <span class="mx-4">• FELLOWSHIP</span>
-            <span class="mx-4">• VISIONARY LEADERSHIP</span>
-            <span class="mx-4">• ROTARACT</span>
-            <span class="mx-4">• EMPOWERMENT</span>
-            <span class="mx-4">• SERVICE ABOVE SELF</span>
-            <span class="mx-4">• FELLOWSHIP</span>
-        </div>
-    </div>
-
-    <!-- Leadership Section -->
-    <section id="leadership" class="py-32 bg-black/40 relative">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-                <div class="max-w-xl">
-                    <h2 class="text-5xl font-black mb-6 italic">Team <span class="gold-gradient-text">Ananta</span></h2>
-                    <p class="text-white/70 text-lg">Meet the leaders driving the transition and shaping the future of RSA MDIO for the year 2026-27.</p>
-                </div>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
-                <!-- Leader 2 -->
-                <div class="group" data-aos="fade-up">
-                    <div class="relative aspect-[3/4] rounded-[32px] overflow-hidden mb-6 shadow-2xl">
-                        <img src="/public/karthik.webp" alt="Rtn. Rtr. Karthik Chikmath" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" referrerPolicy="no-referrer">
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-60"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <div class="w-10 h-10 rounded-full bg-gold-royal/90 flex items-center justify-center text-navy-deep scale-0 group-hover:scale-100 transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 -rotate-45"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                    <!-- Leader 2 -->
+                    <div class="group" data-aos="fade-up">
+                        <div class="relative aspect-[3/4] rounded-[32px] overflow-hidden mb-6 shadow-2xl">
+                            <img src="/public/karthik.webp" alt="Rtn. Rtr. Karthik Chikmath"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                referrerPolicy="no-referrer">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-60">
+                            </div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-gold-royal/90 flex items-center justify-center text-navy-deep scale-0 group-hover:scale-100 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-5 h-5 -rotate-45">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
+                        <h3 class="font-black text-xl mb-1 group-hover:text-gold-royal transition-colors">Rtn. Rtr.
+                            Karthik Chikmath</h3>
+                        <p class="text-white/65 text-sm uppercase tracking-widest font-bold">Host DRR</p>
                     </div>
-                    <h3 class="font-black text-xl mb-1 group-hover:text-gold-royal transition-colors">Rtn. Rtr. Karthik Chikmath</h3>
-                    <p class="text-white/65 text-sm uppercase tracking-widest font-bold">Host DRR</p>
-                </div>
-                <!-- Leader 3 -->
-                <div class="group" data-aos="fade-up">
-                    <div class="relative aspect-[3/4] rounded-[32px] overflow-hidden mb-6 shadow-2xl">
-                        <img src="/public/anirudh.webp" alt="Rtn. Rtr. Anirudh Kulkarni" width="960" height="960" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" referrerPolicy="no-referrer">
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-60"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <div class="w-10 h-10 rounded-full bg-gold-royal/90 flex items-center justify-center text-navy-deep scale-0 group-hover:scale-100 transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 -rotate-45"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    <!-- Leader 3 -->
+                    <div class="group" data-aos="fade-up">
+                        <div class="relative aspect-[3/4] rounded-[32px] overflow-hidden mb-6 shadow-2xl">
+                            <img src="/public/anirudh.webp" alt="Rtn. Rtr. Anirudh Kulkarni" width="960" height="960"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                referrerPolicy="no-referrer">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-60">
+                            </div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-gold-royal/90 flex items-center justify-center text-navy-deep scale-0 group-hover:scale-100 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-5 h-5 -rotate-45">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
+                        <h3 class="font-black text-xl mb-1 group-hover:text-gold-royal transition-colors">Rtn. Rtr.
+                            Anirudh Kulkarni</h3>
+                        <p class="text-white/65 text-sm uppercase tracking-widest font-bold">Event Chair</p>
                     </div>
-                    <h3 class="font-black text-xl mb-1 group-hover:text-gold-royal transition-colors">Rtn. Rtr. Anirudh Kulkarni</h3>
-                    <p class="text-white/65 text-sm uppercase tracking-widest font-bold">Event Chair</p>
-                </div>
-                <!-- Leader 4 -->
-                <div class="group" data-aos="fade-up">
-                    <div class="relative aspect-[3/4] rounded-[32px] overflow-hidden mb-6 shadow-2xl">
-                        <img src="/public/sanjay.webp" alt="Rtn. Rtr. Sanjay R" width="960" height="1707" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" referrerPolicy="no-referrer">
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-60"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <div class="w-10 h-10 rounded-full bg-gold-royal/90 flex items-center justify-center text-navy-deep scale-0 group-hover:scale-100 transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 -rotate-45"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    <!-- Leader 4 -->
+                    <div class="group" data-aos="fade-up">
+                        <div class="relative aspect-[3/4] rounded-[32px] overflow-hidden mb-6 shadow-2xl">
+                            <img src="/public/sanjay.webp" alt="Rtn. Rtr. Sanjay R" width="960" height="1707"
+                                loading="lazy" decoding="async"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                                referrerPolicy="no-referrer">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-60">
+                            </div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-gold-royal/90 flex items-center justify-center text-navy-deep scale-0 group-hover:scale-100 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-5 h-5 -rotate-45">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
+                        <h3 class="font-black text-xl mb-1 group-hover:text-gold-royal transition-colors">Rtn. Rtr.
+                            Sanjay R</h3>
+                        <p class="text-white/65 text-sm uppercase tracking-widest font-bold">Co-Chair</p>
                     </div>
-                    <h3 class="font-black text-xl mb-1 group-hover:text-gold-royal transition-colors">Rtn. Rtr. Sanjay R</h3>
-                    <p class="text-white/65 text-sm uppercase tracking-widest font-bold">Co-Chair</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Committee Heads Section -->
-    <!-- <section id="committees" class="py-24 bg-navy-deep relative border-t border-white/5">
+        <!-- Committee Heads Section -->
+        <!-- <section id="committees" class="py-24 bg-navy-deep relative border-t border-white/5">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black mb-4 italic">Committee <span class="gold-gradient-text">Heads</span></h2>
@@ -709,185 +787,145 @@
         </div>
     </section> -->
 
-    <!-- Global Flags Section -->
-    <section class="py-24 overflow-hidden bg-navy-deep relative">
-        <div class="absolute inset-0 bg-gold-royal/5 opacity-50"></div>
-        <div class="container mx-auto px-4 mb-16 text-center relative z-10">
-            <h2 class="text-4xl font-black flex items-center justify-center gap-4 italic">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-vibrant w-10 h-10"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg> A Global <span class="gold-gradient-text">Presence</span>
-            </h2>
-            <p class="text-white/65 mt-4 uppercase tracking-[0.4em] text-xs font-black">Representing 10+ Nations</p>
-        </div>
-        <div class="relative flex z-10">
-            <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto relative z-10 px-4">
-                <div class="flag-card"><img src="/media/flags/in.webp" class="h-10 w-auto rounded" alt="India" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/mv.webp" class="h-10 w-auto rounded" alt="Maldives" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/lk.webp" class="h-10 w-auto rounded" alt="Sri Lanka" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/np.webp" class="h-10 w-auto rounded" alt="Nepal" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/bt.webp" class="h-10 w-auto rounded" alt="Bhutan" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/bd.webp" class="h-10 w-auto rounded" alt="Bangladesh" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/am.webp" class="h-10 w-auto rounded" alt="Armenia" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/bh.webp" class="h-10 w-auto rounded" alt="Bahrain" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/cy.webp" class="h-10 w-auto rounded" alt="Cyprus" width="80" height="53" loading="lazy" decoding="async"></div>
-                <div class="flag-card"><img src="/media/flags/ae.webp" class="h-10 w-auto rounded" alt="UAE" width="80" height="53" loading="lazy" decoding="async"></div>
+        <!-- Global Flags Section -->
+        <section class="py-24 overflow-hidden bg-navy-deep relative">
+            <div class="absolute inset-0 bg-gold-royal/5 opacity-50"></div>
+            <div class="container mx-auto px-4 mb-16 text-center relative z-10">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-black italic text-center">
+                    <span class="inline-flex items-center justify-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-blue-vibrant w-8 h-8 sm:w-10 sm:h-10 shrink-0">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                            <path d="M2 12h20" />
+                        </svg>
+                        <span>A Global <span class="gold-gradient-text">Presence</span></span>
+                    </span>
+                </h2>
+                <p class="text-white/65 mt-4 uppercase tracking-[0.4em] text-xs font-black">Representing 8 Nations</p>
             </div>
-        </div>
-    </section>
+            <div class="relative flex z-10">
+                <div class="flags-row relative z-10 px-4">
+                    <div class="flag-card"><img src="/media/flags/af.webp" class="h-10 w-auto rounded" alt="Afghanistan"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                    <div class="flag-card"><img src="/media/flags/bd.webp" class="h-10 w-auto rounded" alt="Bangladesh"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                    <div class="flag-card"><img src="/media/flags/bt.webp" class="h-10 w-auto rounded" alt="Bhutan"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                    <div class="flag-card"><img src="/media/flags/in.webp" class="h-10 w-auto rounded" alt="India"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                    <div class="flag-card"><img src="/media/flags/mv.webp" class="h-10 w-auto rounded" alt="Maldives"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                    <div class="flag-card"><img src="/media/flags/np.webp" class="h-10 w-auto rounded" alt="Nepal"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                    <div class="flag-card"><img src="/media/flags/pk.webp" class="h-10 w-auto rounded" alt="Pakistan"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                    <div class="flag-card"><img src="/media/flags/lk.webp" class="h-10 w-auto rounded" alt="Sri Lanka"
+                            width="80" height="53" loading="lazy" decoding="async"></div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Schedule Section -->
-    <section id="schedule" class="py-32 px-4 relative">
-        <div class="container mx-auto max-w-5xl">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl font-black mb-6 italic">Event <span class="gold-gradient-text">Schedule</span></h2>
-                <p class="text-white/65 text-lg max-w-2xl mx-auto">A meticulously planned journey through leadership, culture, and celebration.</p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto" data-aos="fade-up">
-                <div class="space-y-6 relative pl-8 border-l border-white/10">
-                    <!-- Event 1 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:00 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The Arrival</div>
-                                <p class="text-white/60 text-sm">Check-in, grab your kit, and let the infinite journey begin.</p>
+        <!-- Schedule Section -->
+        <section id="schedule" class="py-32 px-4 relative">
+            <div class="container mx-auto max-w-5xl">
+                <div class="text-center mb-24">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-6 italic">Event <span class="gold-gradient-text">Schedule</span>
+                    </h2>
+                    <p class="text-white/65 text-lg max-w-2xl mx-auto">A meticulously planned journey through
+                        leadership, culture, and celebration.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto" data-aos="fade-up">
+                    <!-- Day Selectors -->
+                    <div class="flex justify-center gap-4 mb-12">
+                        <button type="button" id="tab-day1" class="tab-btn px-6 md:px-8 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-black uppercase tracking-widest transition-all duration-300 bg-gold-royal text-navy-deep shadow-lg whitespace-nowrap" aria-selected="true">Day 1</button>
+                        <button type="button" id="tab-day2" class="tab-btn px-6 md:px-8 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-black uppercase tracking-widest transition-all duration-300 bg-white/5 text-white/60 hover:text-white border border-white/10 whitespace-nowrap" aria-selected="false">Day 2</button>
+                    </div>
+
+                    <!-- Day 1 Panel -->
+                    <div id="panel-day1" class="schedule-panel space-y-6 relative pl-8 border-l border-white/10">
+                        <div class="relative group">
+                            <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
+                            <div class="glass-card p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
+                                <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[180px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg> To Be Announced
+                                </div>
+                                <div>
+                                    <div class="text-xl font-bold tracking-tight text-white mb-1">Ananta Installation & ROAR Awards</div>
+                                    <p class="text-white/60 text-sm">Timings and full session itinerary will be announced soon. Stay tuned!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Event 2 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 02:00 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The Oon-Oota</div>
-                                <p class="text-white/60 text-sm">Savor the flavor with an authentic, heavy-duty Bengaluru-style lunch. 🍛</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Event 3 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 03:00 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The Pulse</div>
-                                <p class="text-white/60 text-sm">A high-energy Cultural Kickoff to set the vibe for the afternoon.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Event 4 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 03:30 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The Installation</div>
-                                <p class="text-white/60 text-sm">The Main Event. Witness the historic takeover by Rtn. Rtr. Arun Teja Godavarthi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Event 5 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 06:00 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The Brew Break</div>
-                                <p class="text-white/60 text-sm">Catch your breath with some classic Hi-Tea and networking. ☕</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Event 6 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 06:30 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The ROAR Awards</div>
-                                <p class="text-white/60 text-sm">Lights. Camera. Impact. Celebrating the fiercest lions of RSA MDIO. 🦁</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Event 7 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 09:00 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The Feast</div>
-                                <p class="text-white/60 text-sm">A curated Gala Dinner to fuel the rest of your night.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Event 8 -->
-                    <div class="relative group">
-                        <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
-                        <div class="glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
-                            <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[120px]">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 09:30 PM
-                            </div>
-                            <div>
-                                <div class="text-xl font-bold tracking-tight text-white mb-1">The Afterparty</div>
-                                <p class="text-white/60 text-sm">Drop the beat. The dance floor is yours with our live DJ. 🎧</p>
+
+                    <!-- Day 2 Panel (Hidden by default) -->
+                    <div id="panel-day2" class="schedule-panel space-y-6 relative pl-8 border-l border-white/10 hidden">
+                        <div class="relative group">
+                            <div class="absolute -left-[37px] top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-navy-deep border-2 border-gold-royal group-hover:scale-150 transition-transform z-10"></div>
+                            <div class="glass-card p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/10 transition-all duration-300 border-white/5 hover:border-gold-royal/30">
+                                <div class="flex items-center gap-2 text-gold-royal font-mono font-black text-lg min-w-[180px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg> Coming Soon
+                                </div>
+                                <div>
+                                    <div class="text-xl font-bold tracking-tight text-white mb-1">Coming Soon</div>
+                                    <p class="text-white/60 text-sm">Day 2 session details and activities will be announced soon.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Decorative Divider -->
-    <div class="w-full py-4 bg-gold-royal text-navy-deep overflow-hidden flex items-center border-y border-gold-royal/50 relative z-20">
-        <div class="flex whitespace-nowrap animate-marquee font-black uppercase tracking-widest text-sm">
-            <span class="mx-4">• SECURE YOUR SPOT</span>
-            <span class="mx-4">• REGISTER NOW</span>
-            <span class="mx-4">• ANANTA 2026</span>
-            <span class="mx-4">• JOIN THE LEGACY</span>
-            <span class="mx-4">• SECURE YOUR SPOT</span>
-            <span class="mx-4">• REGISTER NOW</span>
-            <span class="mx-4">• ANANTA 2026</span>
-            <span class="mx-4">• JOIN THE LEGACY</span>
-            <span class="mx-4">• SECURE YOUR SPOT</span>
-            <span class="mx-4">• REGISTER NOW</span>
-            <span class="mx-4">• ANANTA 2026</span>
-            <span class="mx-4">• JOIN THE LEGACY</span>
-            <span class="mx-4">• SECURE YOUR SPOT</span>
-            <span class="mx-4">• REGISTER NOW</span>
-            <span class="mx-4">• ANANTA 2026</span>
-            <span class="mx-4">• JOIN THE LEGACY</span>
-        </div>
-    </div>
-
-    <!-- Registration Section -->
-    <section id="register" class="py-32 bg-gradient-to-b from-black/60 to-navy-deep relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.1)_0%,transparent_70%)]"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl font-black mb-6 italic">Dive into the <span class="gold-gradient-text">Limitless</span></h2>
-                <p class="text-white/65 text-lg max-w-2xl mx-auto">Register to be part of the historic 17th RSA MDIO Installation and ROAR 2026.</p>
+        <!-- Decorative Divider -->
+        <div
+            class="w-full py-4 bg-gold-royal text-navy-deep overflow-hidden flex items-center border-y border-gold-royal/50 relative z-20">
+            <div class="flex whitespace-nowrap animate-marquee font-black uppercase tracking-widest text-sm">
+                <span class="mx-4">• SECURE YOUR SPOT</span>
+                <span class="mx-4">• REGISTER NOW</span>
+                <span class="mx-4">• ANANTA 2026</span>
+                <span class="mx-4">• JOIN THE LEGACY</span>
+                <span class="mx-4">• SECURE YOUR SPOT</span>
+                <span class="mx-4">• REGISTER NOW</span>
+                <span class="mx-4">• ANANTA 2026</span>
+                <span class="mx-4">• JOIN THE LEGACY</span>
+                <span class="mx-4">• SECURE YOUR SPOT</span>
+                <span class="mx-4">• REGISTER NOW</span>
+                <span class="mx-4">• ANANTA 2026</span>
+                <span class="mx-4">• JOIN THE LEGACY</span>
+                <span class="mx-4">• SECURE YOUR SPOT</span>
+                <span class="mx-4">• REGISTER NOW</span>
+                <span class="mx-4">• ANANTA 2026</span>
+                <span class="mx-4">• JOIN THE LEGACY</span>
             </div>
-            
-            <!-- Single card: spans & centers on md+. Two cards: remove md:col-span-2 md:justify-self-center from each pricing card. -->
-            <div class="mx-auto grid max-w-5xl grid-cols-1 justify-items-center gap-12 md:grid-cols-2 md:items-start">
-                <!-- Standard -->
-                <!-- <div class="glass-card w-full max-w-xl p-12 border-white/10 relative group md:max-w-none" data-aos="fade-right">
+        </div>
+
+        <!-- Registration Section -->
+        <section id="register" class="py-32 bg-gradient-to-b from-black/60 to-navy-deep relative overflow-hidden">
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.1)_0%,transparent_70%)]">
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="text-center mb-24">
+                    <h2 class="text-5xl font-black mb-6 italic">Dive into the <span
+                            class="gold-gradient-text">Limitless</span></h2>
+                    <p class="text-white/65 text-lg max-w-2xl mx-auto">Register to be part of the historic 17th RSA MDIO
+                        Installation and ROAR 2026.</p>
+                </div>
+
+                <!-- Single card: spans & centers on md+. Two cards: remove md:col-span-2 md:justify-self-center from each pricing card. -->
+                <div
+                    class="mx-auto grid max-w-5xl grid-cols-1 justify-items-center gap-12 md:grid-cols-2 md:items-start">
+                    <!-- Standard -->
+                    <!-- <div class="glass-card w-full max-w-xl p-12 border-white/10 relative group md:max-w-none" data-aos="fade-right">
                     <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
                     <h3 class="text-3xl font-black mb-4 italic">Early Bird</h3>
                     <p class="text-white/65 mb-10 font-medium">Exclusive early bird slot registration.</p>
@@ -915,250 +953,518 @@
                 </div> -->
 
 
-                <div class="glass-card relative w-full max-w-xl border-gold-royal/40 bg-gold-royal/5 p-12 shadow-[0_0_50px_rgba(212,175,55,0.1)] group md:col-span-2 md:max-w-2xl md:justify-self-center" data-aos="fade-left">
-                    <div class="absolute -top-5 right-10 bg-gold-royal text-navy-deep text-xs font-black px-6 py-2 rounded-full uppercase tracking-widest shadow-xl">
-                        Price Rising Soon
+                    <div class="glass-card relative w-full max-w-xl border-gold-royal/40 bg-gold-royal/5 p-6 sm:p-12 shadow-[0_0_50px_rgba(212,175,55,0.1)] group md:col-span-2 md:max-w-2xl md:justify-self-center"
+                        data-aos="fade-left">
+                        <div
+                            class="absolute -top-5 right-10 bg-gold-royal text-navy-deep text-xs font-black px-6 py-2 rounded-full uppercase tracking-widest shadow-xl">
+                            Price Rising Soon
+                        </div>
+                        <h3 class="text-3xl font-black mb-4 italic text-gold-royal">Royal Pass</h3>
+                        <p class="text-white/65 mb-10 font-medium">Catch the price before it changes.</p>
+                        <div class="flex items-baseline gap-2 mb-12">
+                            <span class="text-6xl font-black text-gold-royal">₹4,444</span>
+                            <span class="text-gold-royal/30 font-bold uppercase tracking-widest text-sm">/
+                                Delegate</span>
+                        </div>
+                        <ul class="space-y-6 mb-12">
+                            <li class="flex items-center gap-4 text-white/70 font-medium">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="m9 12 2 2 4-4" />
+                                    </svg>
+                                </div>
+                                Delegate Kit
+                            </li>
+                            <li class="flex items-center gap-4 text-white/70 font-medium">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="m9 12 2 2 4-4" />
+                                    </svg>
+                                </div>
+                                Delicious Meals
+                            </li>
+                            <li class="flex items-center gap-4 text-white/70 font-medium">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="m9 12 2 2 4-4" />
+                                    </svg>
+                                </div>
+                                Accommodation
+                            </li>
+                            <li class="flex items-center gap-4 text-white/70 font-medium">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="m9 12 2 2 4-4" />
+                                    </svg>
+                                </div>
+                                Limitless Entertainment
+                            </li>
+                            <li class="flex items-center gap-4 text-white/70 font-medium">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="m9 12 2 2 4-4" />
+                                    </svg>
+                                </div>
+                                Limitless Networking
+                            </li>
+                        </ul>
+                        <a href="https://go.rsamdio.org/ananta" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex w-full items-center justify-center py-5 bg-gold-royal text-navy-deep rounded-[20px] font-black uppercase tracking-widest hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all duration-300">
+                            Register Now
+                        </a>
                     </div>
-                    <h3 class="text-3xl font-black mb-4 italic text-gold-royal">Limitless Pass</h3>
-                    <p class="text-white/65 mb-10 font-medium">Catch the price before it changes.</p>
-                    <div class="flex items-baseline gap-2 mb-12">
-                        <span class="text-6xl font-black text-gold-royal">₹3,777</span>
-                        <span class="text-gold-royal/30 font-bold uppercase tracking-widest text-sm">/ Delegate</span>
-                    </div>
-                    <ul class="space-y-6 mb-12">
-                        <li class="flex items-center gap-4 text-white/70 font-medium">
-                            <div class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                            </div>
-                            Delegate Kit
-                        </li>
-                        <li class="flex items-center gap-4 text-white/70 font-medium">
-                            <div class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                            </div>
-                            Delicious Meals
-                        </li>
-                        <li class="flex items-center gap-4 text-white/70 font-medium">
-                            <div class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                            </div>
-                            Accommodation
-                        </li>
-                        <li class="flex items-center gap-4 text-white/70 font-medium">
-                            <div class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                            </div>
-                            Limitless Entertainment
-                        </li>
-                        <li class="flex items-center gap-4 text-white/70 font-medium">
-                            <div class="w-6 h-6 rounded-full bg-gold-royal/20 flex items-center justify-center text-gold-royal">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                            </div>
-                            Limitless Networking
-                        </li>
-                    </ul>
-                    <a href="https://go.rsamdio.org/ananta" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center py-5 bg-gold-royal text-navy-deep rounded-[20px] font-black uppercase tracking-widest hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all duration-300">
-                        Register Now
-                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- The Grand Venue -->
-    <section id="venue" class="py-32 px-4 relative overflow-hidden bg-black/40">
-        <div class="absolute inset-0 bg-carbon-texture opacity-10"></div>
-        <div class="container mx-auto max-w-6xl relative z-10">
-            <div class="text-center mb-20" data-aos="fade-up">
-                <h2 class="text-5xl font-black mb-6 italic">The Grand <span class="gold-gradient-text">Venue</span></h2>
-                <p class="text-white/65 text-lg max-w-2xl mx-auto">A luxurious setting for a historic transition. Experience world-class hospitality and the perfect ambiance for ANANTA 2026.</p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1" data-aos="fade-right">
-                    <h3 class="text-4xl font-black text-white mb-2">Ramada by Wyndham</h3>
-                    <p class="text-gold-royal uppercase tracking-widest font-bold text-sm mb-8">Bengaluru, Yelahanka</p>
-                    
-                    <p class="text-white/70 leading-relaxed mb-8">
-                        Nestled in the serene outskirts of Bengaluru, Ramada by Wyndham offers the perfect blend of modern luxury and tranquil nature. With state-of-the-art convention facilities, lush green lawns, and exquisite dining, it is the ultimate destination to host the 17th RSA MDIO Installation Ceremony.
-                    </p>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-center gap-4 text-white/80">
-                            <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-royal shrink-0 border border-white/10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
-                            <span>Doddaballapur Road, Yelahanka, Bengaluru</span>
-                        </div>
-                        <div class="flex items-center gap-4 text-white/80">
-                            <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-royal shrink-0 border border-white/10">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
-                            </div>
-                            <span>Premium Convention Center & Resort</span>
-                        </div>
-                    </div>
-                    
-                    <button class="btn-primary flex items-center gap-3 group">
-                        Get Directions <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-                    </button>
-                </div>
-                
-                <div class="order-1 lg:order-2 relative group" data-aos="fade-left">
-                    <div class="absolute -inset-4 bg-gold-royal/20 blur-2xl rounded-[40px] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <div class="relative aspect-[4/3] rounded-[32px] overflow-hidden glass-card p-2">
-                        <img src="/media/venue/ramada.webp" width="1000" height="667" alt="Ramada by Wyndham" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-[24px] transition-transform duration-1000 group-hover:scale-105">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Explore Bengaluru -->
-    <section id="explore" class="py-32 px-4 relative overflow-hidden">
-        <div class="absolute top-1/4 left-0 w-[400px] h-[400px] bg-blue-vibrant/5 rounded-full blur-[120px]"></div>
-        <div class="container mx-auto">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl font-black mb-6 italic">Explore <span class="gold-gradient-text">Bengaluru</span></h2>
-                <p class="text-white/65 text-lg max-w-2xl mx-auto">Experience the vibrant culture, lush greenery, and legendary flavors of India's most dynamic city.</p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-20">
-                <!-- Places -->
-                <div data-aos="fade-right">
-                    <h3 class="text-3xl font-black flex items-center gap-4 italic mb-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-vibrant w-8 h-8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Iconic Landmarks
-                    </h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/landmarks/cubbon.webp" width="720" height="480" alt="Cubbon Park" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Cubbon Park</h4>
-                                <p class="text-white/60 text-sm">The Lungs of Bengaluru</p>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/landmarks/vidhana.webp" width="720" height="480" alt="Vidhana Soudha" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Vidhana Soudha</h4>
-                                <p class="text-white/60 text-sm">Neo-Dravidian Architecture</p>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/landmarks/lalbagh.webp" width="720" height="480" alt="Lalbagh" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Lalbagh</h4>
-                                <p class="text-white/60 text-sm">Botanical Splendor</p>
-                            </div>
-                        </div>
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/food/phoenix.webp" width="480" height="480" alt="Phoenix Mall" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Mall of Asia</h4>
-                                <p class="text-white/60 text-sm">Premier Shopping</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- The Grand Venue -->
+        <section id="venue" class="py-32 px-4 relative overflow-hidden bg-black/40">
+            <div class="absolute inset-0 bg-carbon-texture opacity-10"></div>
+            <div class="container mx-auto max-w-6xl relative z-10">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h2 class="text-5xl font-black mb-6 italic">The Grand <span class="gold-gradient-text">Venue</span>
+                    </h2>
+                    <p class="text-white/65 text-lg max-w-2xl mx-auto">A luxurious setting for a historic transition.
+                        Experience world-class hospitality and the perfect ambiance for ANANTA 2026.</p>
                 </div>
 
-                <!-- Food -->
-                <div data-aos="fade-left">
-                    <h3 class="text-3xl font-black flex items-center gap-4 italic mb-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold-royal w-8 h-8"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg> Taste of Bengaluru
-                    </h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/food/dosa.webp" width="480" height="480" alt="Masala Dosa" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Masala Dosa</h4>
-                                <p class="text-white/60 text-sm">Crispy & Iconic</p>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1" data-aos="fade-right">
+                        <h3 class="text-4xl font-black text-white mb-2">Ramada by Wyndham</h3>
+                        <p class="text-gold-royal uppercase tracking-widest font-bold text-sm mb-8">Bengaluru, Yelahanka
+                        </p>
+
+                        <p class="text-white/70 leading-relaxed mb-8">
+                            Nestled in the serene outskirts of Bengaluru, Ramada by Wyndham offers the perfect blend of
+                            modern luxury and tranquil nature. With state-of-the-art convention facilities, lush green
+                            lawns, and exquisite dining, it is the ultimate destination to host the 17th RSA MDIO
+                            Installation Ceremony.
+                        </p>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center gap-4 text-white/80">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-royal shrink-0 border border-white/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-5 h-5">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <span>Doddaballapur Road, Yelahanka, Bengaluru</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-white/80">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-royal shrink-0 border border-white/10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-5 h-5">
+                                        <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
+                                        <path d="M9 22v-4h6v4" />
+                                        <path d="M8 6h.01" />
+                                        <path d="M16 6h.01" />
+                                        <path d="M12 6h.01" />
+                                        <path d="M12 10h.01" />
+                                        <path d="M12 14h.01" />
+                                        <path d="M16 10h.01" />
+                                        <path d="M16 14h.01" />
+                                        <path d="M8 10h.01" />
+                                        <path d="M8 14h.01" />
+                                    </svg>
+                                </div>
+                                <span>Premium Convention Center & Resort</span>
                             </div>
                         </div>
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/food/coffee.webp" width="480" height="480" alt="Filter Coffee" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Filter Coffee</h4>
-                                <p class="text-white/60 text-sm">The Morning Ritual</p>
-                            </div>
+
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ramada+by+Wyndham+Yelahanka+Bengaluru"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn-primary inline-flex items-center gap-3 group">
+                            Get Directions <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" x2="21" y1="14" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="order-1 lg:order-2 relative group" data-aos="fade-left">
+                        <div
+                            class="absolute -inset-4 bg-gold-royal/20 blur-2xl rounded-[40px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                         </div>
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/food/biryani.webp" width="480" height="480" alt="Biryani" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Donne Biryani</h4>
-                                <p class="text-white/60 text-sm">Local Favorite</p>
+                        <div class="relative aspect-[4/3] rounded-[32px] overflow-hidden glass-card p-2"
+                            id="venue-slideshow-container">
+                            <!-- Venue Slideshow Track -->
+                            <div class="relative w-full h-full overflow-hidden rounded-[24px]">
+                                <!-- Slide 1 -->
+                                <div
+                                    class="venue-slide absolute inset-0 opacity-100 transition-all duration-1000 ease-in-out transform scale-100">
+                                    <img src="/media/venue/venue1.webp" width="1000" height="667"
+                                        alt="Ramada Grand Entry" class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-deep/80 to-transparent p-6 pt-12">
+                                        <p class="text-gold-royal font-bold uppercase tracking-wider text-xs">Premium
+                                            Setup</p>
+                                        <p class="text-white font-black text-lg sm:text-xl">Grand Entryway & Lobby</p>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div
+                                    class="venue-slide absolute inset-0 opacity-0 transition-all duration-1000 ease-in-out transform scale-95 pointer-events-none">
+                                    <img src="/media/venue/venue2.webp" width="1000" height="667" alt="Convention Hall"
+                                        class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-deep/80 to-transparent p-6 pt-12">
+                                        <p class="text-gold-royal font-bold uppercase tracking-wider text-xs">The Stage
+                                            is Set</p>
+                                        <p class="text-white font-black text-lg sm:text-xl">State-of-the-Art Convention
+                                            Hall</p>
+                                    </div>
+                                </div>
+                                <!-- Slide 3 -->
+                                <div
+                                    class="venue-slide absolute inset-0 opacity-0 transition-all duration-1000 ease-in-out transform scale-95 pointer-events-none">
+                                    <img src="/media/venue/venue3.jpg" width="1000" height="667" alt="Luxury Suite"
+                                        class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-deep/80 to-transparent p-6 pt-12">
+                                        <p class="text-gold-royal font-bold uppercase tracking-wider text-xs">Luxury
+                                            Stay</p>
+                                        <p class="text-white font-black text-lg sm:text-xl">Premium Suites & Comfort</p>
+                                    </div>
+                                </div>
+                                <!-- Slide 4 -->
+                                <div
+                                    class="venue-slide absolute inset-0 opacity-0 transition-all duration-1000 ease-in-out transform scale-95 pointer-events-none">
+                                    <img src="/media/venue/venue4.jpg" width="1000" height="667" alt="Ambiance & Pool"
+                                        class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-deep/80 to-transparent p-6 pt-12">
+                                        <p class="text-gold-royal font-bold uppercase tracking-wider text-xs">Scenic
+                                            Experience</p>
+                                        <p class="text-white font-black text-lg sm:text-xl">Lush Ambiance & Leisure</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
-                            <img src="/media/food/bisi.webp" width="480" height="480" alt="Bisi Bele Bath" loading="lazy" decoding="async" class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80"></div>
-                            <div class="absolute bottom-6 left-6">
-                                <h4 class="text-xl font-black">Bisi Bele Bath</h4>
-                                <p class="text-white/60 text-sm">Spicy Lentil Rice</p>
+
+                            <!-- Slideshow Navigation Arrows -->
+                            <button type="button" onclick="changeVenueSlide(-1)" aria-label="Previous slide"
+                                class="absolute left-6 top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-navy-deep/70 text-white border border-white/10 hover:bg-gold-royal hover:text-navy-deep transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-5 h-5">
+                                    <path d="m15 18-6-6 6-6" />
+                                </svg>
+                            </button>
+                            <button type="button" onclick="changeVenueSlide(1)" aria-label="Next slide"
+                                class="absolute right-6 top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-navy-deep/70 text-white border border-white/10 hover:bg-gold-royal hover:text-navy-deep transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-5 h-5">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+
+                            <!-- Indicators -->
+                            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                                <button type="button" onclick="setVenueSlide(0)"
+                                    class="venue-dot w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white transition-all duration-300 active bg-white"
+                                    aria-label="Go to slide 1"></button>
+                                <button type="button" onclick="setVenueSlide(1)"
+                                    class="venue-dot w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
+                                    aria-label="Go to slide 2"></button>
+                                <button type="button" onclick="setVenueSlide(2)"
+                                    class="venue-dot w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
+                                    aria-label="Go to slide 3"></button>
+                                <button type="button" onclick="setVenueSlide(3)"
+                                    class="venue-dot w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white transition-all duration-300"
+                                    aria-label="Go to slide 4"></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ (content mirrors JSON-LD FAQPage for search & AI) -->
-    <section id="faq" class="py-24 px-4 bg-black/30 border-t border-white/10 scroll-mt-28" aria-labelledby="faq-heading">
-        <div class="container mx-auto max-w-3xl">
-            <h2 id="faq-heading" class="text-4xl md:text-5xl font-black mb-4 italic text-center">Frequently Asked <span class="gold-gradient-text">Questions</span></h2>
-            <p class="text-white/70 text-center mb-14 text-lg">Answers about dates, venue, registration, and who hosts ANANTA 2026.</p>
-            <div class="space-y-6" data-aos="fade-up">
-                <div class="glass-card p-6 md:p-8 rounded-2xl border border-white/10">
-                    <h3 class="text-lg font-black text-gold-royal mb-3 uppercase tracking-wide">What is ANANTA 2026?</h3>
-                    <p class="text-white/70 leading-relaxed">ANANTA 2026 is the 17th <strong class="text-white">Rotaract South Asia MDIO (RSA MDIO) Installation Ceremony</strong>, held together with the <strong class="text-white">ROAR Awards</strong> in Bengaluru. It celebrates the handover of leadership and impact across the Rotaract South Asia footprint.</p>
+        <!-- Explore Bengaluru -->
+        <section id="explore" class="py-32 px-4 relative overflow-hidden">
+            <div class="absolute top-1/4 left-0 w-[400px] h-[400px] bg-blue-vibrant/5 rounded-full blur-[120px]"></div>
+            <div class="container mx-auto">
+                <div class="text-center mb-24">
+                    <h2 class="text-5xl font-black mb-6 italic">Explore <span
+                            class="gold-gradient-text">Bengaluru</span></h2>
+                    <p class="text-white/65 text-lg max-w-2xl mx-auto">Experience the vibrant culture, lush greenery,
+                        and legendary flavors of India's most dynamic city.</p>
                 </div>
-                <div class="glass-card p-6 md:p-8 rounded-2xl border border-white/10">
-                    <h3 class="text-lg font-black text-gold-royal mb-3 uppercase tracking-wide">When and where is it?</h3>
-                    <p class="text-white/70 leading-relaxed"><strong class="text-white">May 30–31, 2026</strong>, primarily at <strong class="text-white">Ramada by Wyndham Bengaluru Yelahanka</strong>, Doddaballapur Road, Yelahanka, Bengaluru <span class="text-white/90">560064</span>, Karnataka, India. The on-page schedule lists day-of timings.</p>
-                </div>
-                <div class="glass-card p-6 md:p-8 rounded-2xl border border-white/10">
-                    <h3 class="text-lg font-black text-gold-royal mb-3 uppercase tracking-wide">How do I register?</h3>
-                    <p class="text-white/70 leading-relaxed">Use the official link <a href="https://go.rsamdio.org/ananta" target="_blank" rel="noopener noreferrer" class="text-gold-royal font-semibold underline hover:no-underline">go.rsamdio.org/ananta</a> — the same destination as every <strong class="text-white">Register</strong> button on this site.</p>
+
+                <div class="grid lg:grid-cols-2 gap-20">
+                    <!-- Places -->
+                    <div data-aos="fade-right">
+                        <h3 class="text-3xl font-black flex items-center gap-4 italic mb-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-blue-vibrant w-8 h-8">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg> Iconic Landmarks
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/landmarks/cubbon.webp" width="720" height="480" alt="Cubbon Park"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Cubbon Park</h4>
+                                    <p class="text-white/60 text-sm">The Lungs of Bengaluru</p>
+                                </div>
+                            </div>
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/landmarks/vidhana.webp" width="720" height="480" alt="Vidhana Soudha"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Vidhana Soudha</h4>
+                                    <p class="text-white/60 text-sm">Neo-Dravidian Architecture</p>
+                                </div>
+                            </div>
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/landmarks/lalbagh.webp" width="720" height="480" alt="Lalbagh"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Lalbagh</h4>
+                                    <p class="text-white/60 text-sm">Botanical Splendor</p>
+                                </div>
+                            </div>
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/food/phoenix.webp" width="480" height="480" alt="Phoenix Mall"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Mall of Asia</h4>
+                                    <p class="text-white/60 text-sm">Premier Shopping</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Food -->
+                    <div data-aos="fade-left">
+                        <h3 class="text-3xl font-black flex items-center gap-4 italic mb-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-gold-royal w-8 h-8">
+                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+                                <path d="M7 2v20" />
+                                <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+                            </svg> Taste of Bengaluru
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/food/dosa.webp" width="480" height="480" alt="Masala Dosa"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Masala Dosa</h4>
+                                    <p class="text-white/60 text-sm">Crispy & Iconic</p>
+                                </div>
+                            </div>
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/food/coffee.webp" width="480" height="480" alt="Filter Coffee"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Filter Coffee</h4>
+                                    <p class="text-white/60 text-sm">The Morning Ritual</p>
+                                </div>
+                            </div>
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/food/biryani.webp" width="480" height="480" alt="Biryani"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Donne Biryani</h4>
+                                    <p class="text-white/60 text-sm">Local Favorite</p>
+                                </div>
+                            </div>
+                            <div class="group relative overflow-hidden rounded-3xl aspect-square glass-card p-2">
+                                <img src="/media/food/bisi.webp" width="480" height="480" alt="Bisi Bele Bath"
+                                    loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent opacity-80">
+                                </div>
+                                <div class="absolute bottom-6 left-6">
+                                    <h4 class="text-xl font-black">Bisi Bele Bath</h4>
+                                    <p class="text-white/60 text-sm">Spicy Lentil Rice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- FAQ (content mirrors JSON-LD FAQPage for search & AI) -->
+        <section id="faq" class="py-24 px-4 bg-black/30 border-t border-white/10 scroll-mt-28"
+            aria-labelledby="faq-heading">
+            <div class="container mx-auto max-w-3xl">
+                <h2 id="faq-heading" class="text-4xl md:text-5xl font-black mb-4 italic text-center">Frequently Asked
+                    <span class="gold-gradient-text">Questions</span>
+                </h2>
+                <p class="text-white/70 text-center mb-14 text-lg">Answers about dates, venue, registration, and who
+                    hosts ANANTA 2026.</p>
+                <div class="space-y-4" data-aos="fade-up">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item glass-card rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-trigger w-full flex justify-between items-center p-6 md:p-8 text-left focus:outline-none" aria-expanded="false">
+                            <span class="text-lg font-black text-gold-royal uppercase tracking-wide">What is ANANTA 2026?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gold-royal faq-chevron transition-transform duration-300 shrink-0 ml-4">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-white/70 leading-relaxed border-t border-white/5 pt-4">
+                                ANANTA 2026 is the 17th <strong class="text-white">Rotaract South Asia MDIO (RSA MDIO) Installation Ceremony</strong>,
+                                held together with the <strong class="text-white">ROAR Awards</strong> in Bengaluru. It
+                                celebrates the handover of leadership and impact across the Rotaract South Asia footprint.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item glass-card rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-trigger w-full flex justify-between items-center p-6 md:p-8 text-left focus:outline-none" aria-expanded="false">
+                            <span class="text-lg font-black text-gold-royal uppercase tracking-wide">When and where is it?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gold-royal faq-chevron transition-transform duration-300 shrink-0 ml-4">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-white/70 leading-relaxed border-t border-white/5 pt-4">
+                                <strong class="text-white">May 30–31, 2026</strong>, primarily at <strong class="text-white">Ramada by Wyndham Bengaluru Yelahanka</strong>,
+                                Doddaballapur Road, Yelahanka, Bengaluru <span class="text-white/90">560064</span>, Karnataka, India. The on-page schedule lists day-of timings.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item glass-card rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-trigger w-full flex justify-between items-center p-6 md:p-8 text-left focus:outline-none" aria-expanded="false">
+                            <span class="text-lg font-black text-gold-royal uppercase tracking-wide">How do I register?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gold-royal faq-chevron transition-transform duration-300 shrink-0 ml-4">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-6 md:px-8 pb-6 md:pb-8 text-white/70 leading-relaxed border-t border-white/5 pt-4">
+                                Use the official link <a href="https://go.rsamdio.org/ananta" target="_blank" rel="noopener noreferrer" class="text-gold-royal font-semibold underline hover:no-underline">go.rsamdio.org/ananta</a>
+                                — the same destination as every <strong class="text-white">Register</strong> button on this site.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <!-- Footer -->
     <footer class="py-20 bg-navy-deep border-t border-white/10 relative overflow-hidden">
-        <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-vibrant via-gold-royal to-purple-600"></div>
+        <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-vibrant via-gold-royal to-purple-600">
+        </div>
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-16 mb-20">
                 <div class="space-y-8">
-                    <img src="/public/ananta-logo-nav.webp" alt="Ananta Logo" width="256" height="256" loading="lazy" decoding="async" class="h-16 w-auto hover:scale-110 transition-transform duration-300" referrerPolicy="no-referrer">
+                    <img src="/public/ananta-logo-nav.webp" alt="Ananta Logo" width="256" height="256" loading="lazy"
+                        decoding="async" class="h-16 w-auto hover:scale-110 transition-transform duration-300"
+                        referrerPolicy="no-referrer">
                     <p class="text-white/65 leading-relaxed font-normal">
-                        Witnessing the transition of leadership at the 17th RSA MDIO Installation Ceremony. Join us in Bengaluru for an unforgettable experience.
+                        Witnessing the transition of leadership at the 17th RSA MDIO Installation Ceremony. Join us in
+                        Bengaluru for an unforgettable experience.
                     </p>
                     <div class="flex gap-4">
-                        <div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:bg-gold-royal hover:text-navy-deep transition-all cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
-                        </div>
-                        <div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:bg-gold-royal hover:text-navy-deep transition-all cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
-                        </div>
+                        <a href="https://www.instagram.com/rsamdio/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:bg-gold-royal hover:text-navy-deep transition-all"
+                            aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://go.rsamdio.org/ananta" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:bg-gold-royal hover:text-navy-deep transition-all"
+                            aria-label="Website">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                <path d="M2 12h20" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                
+
                 <div class="space-y-8">
                     <h4 class="text-xl font-black italic">Quick Links</h4>
                     <ul class="space-y-4">
-                        <li><a href="#home" class="text-white/65 hover:text-gold-royal transition-colors font-medium">Home</a></li>
-                        <li><a href="#about" class="text-white/65 hover:text-gold-royal transition-colors font-medium">About</a></li>
-                        <li><a href="#leadership" class="text-white/65 hover:text-gold-royal transition-colors font-medium">Team</a></li>
-                        <li><a href="#faq" class="text-white/65 hover:text-gold-royal transition-colors font-medium">FAQ</a></li>
+                        <li><a href="#home"
+                                class="text-white/65 hover:text-gold-royal transition-colors font-medium">Home</a></li>
+                        <li><a href="#about"
+                                class="text-white/65 hover:text-gold-royal transition-colors font-medium">About</a></li>
+                        <li><a href="#leadership"
+                                class="text-white/65 hover:text-gold-royal transition-colors font-medium">Team</a></li>
+                        <li><a href="#faq"
+                                class="text-white/65 hover:text-gold-royal transition-colors font-medium">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -1166,16 +1472,22 @@
                     <h4 class="text-xl font-black italic">Contact Us</h4>
                     <div class="space-y-4">
                         <div class="flex items-start gap-4 text-white/65">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gold-royal mt-1 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5 text-gold-royal mt-1 shrink-0">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
                             <p>Bengaluru, Karnataka, India</p>
                         </div>
                     </div>
                     <div class="pt-4">
-                        <p class="text-[10px] uppercase tracking-[0.3em] text-white/55 font-black mb-4">RSA MDIO 2026-27</p>
+                        <p class="text-[10px] uppercase tracking-[0.3em] text-white/55 font-black mb-4">RSA MDIO 2026-27
+                        </p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center pt-12 border-t border-white/5">
                 <p class="text-white/55 text-xs font-medium">
                     © 2026 ANANTA - 17th RSA MDIO Installation Ceremony. Crafted for Rotaract Excellence.
@@ -1184,7 +1496,15 @@
         </div>
     </footer>
 
+    <!-- Floating Scroll to Top Button -->
+    <button type="button" id="scroll-to-top" class="scroll-to-top opacity-0" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="main.js" defer></script>
+    <script src="main.js?v=1.2" defer></script>
 </body>
+
 </html>

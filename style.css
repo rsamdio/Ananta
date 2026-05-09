@@ -44,8 +44,9 @@ body {
 
 /* Hero: soft ambient blobs, very slow drift (replaces Tailwind animate-pulse on large blurs) */
 @keyframes heroAmbient {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.85; transform: scale(1.03); }
+    0%, 100% { opacity: 1; transform: translate(0, 0) scale(1); }
+    33% { opacity: 0.9; transform: translate(25px, -35px) scale(1.06); }
+    66% { opacity: 0.85; transform: translate(-30px, 20px) scale(0.94); }
 }
 
 .hero-ambient {
@@ -291,3 +292,139 @@ body {
         transform: none;
     }
 }
+
+/* Venue Slideshow Styles */
+.venue-slide {
+    transition: opacity 1000ms ease-in-out, transform 1000ms ease-in-out;
+}
+.venue-slide.opacity-100 {
+    transform: scale(1);
+    opacity: 1;
+}
+.venue-slide.opacity-0 {
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+/* Floating Scroll to Top Button */
+.scroll-to-top {
+    position: fixed !important;
+    bottom: 2rem !important;
+    right: 2rem !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 3rem !important; /* 48px */
+    height: 3rem !important; /* 48px */
+    border-radius: 9999px !important;
+    background: rgba(5, 5, 26, 0.6) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: var(--color-gold-royal) !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.1) !important;
+}
+
+.scroll-to-top.opacity-0 {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translateY(10px) !important;
+}
+
+.scroll-to-top.opacity-100 {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateY(0) !important;
+}
+
+.scroll-to-top:hover {
+    background: var(--color-gold-royal) !important;
+    color: var(--color-navy-deep) !important;
+    border-color: var(--color-gold-royal) !important;
+    transform: translateY(-4px) scale(1.1) !important;
+    box-shadow: 0 15px 40px -5px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.6) !important;
+}
+
+/* Global Flags Row Layout */
+.flags-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 1.25rem !important;
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+}
+
+@media (max-width: 1024px) {
+    .flags-row {
+        gap: 0.85rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .flags-row {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 0.75rem !important;
+    }
+    
+    .flags-row .flag-card {
+        padding: 0.75rem !important;
+        border-radius: 16px !important;
+    }
+}
+
+/* FAQ Accordion Transitions */
+.faq-item.active .faq-chevron {
+    transform: rotate(180deg) !important;
+    color: var(--color-gold-royal) !important;
+}
+
+.faq-content {
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Legacy Gallery Scroll Snap Utilities */
+#gallery-carousel {
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.gallery-slide {
+    scroll-snap-align: center !important;
+}
+
+/* Premium Tab Buttons Layout Optimization */
+.tab-btn {
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+@media (min-width: 641px) {
+    .tab-btn {
+        padding: 12px 36px !important;
+        font-size: 13px !important;
+        letter-spacing: 0.15em !important;
+        min-width: 130px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .tab-btn {
+        padding: 8px 18px !important;
+        font-size: 11px !important;
+        letter-spacing: 0.1em !important;
+        min-width: 90px !important;
+    }
+}
+
