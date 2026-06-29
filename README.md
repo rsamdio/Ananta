@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a48f664d-f88a-44a1-8ca8-dc69fe0a1a6b/deploy-status)](https://app.netlify.com/projects/ananta2026/deploys)
+
 # ANANTA 2026 – RSA MDIO Installation
 
 Static website for the 17th RSA MDIO Installation Ceremony (May 30–31, 2026, Bengaluru).
