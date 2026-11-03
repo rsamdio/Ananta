@@ -164,27 +164,6 @@
     });
   });
 
-  var targetDate = new Date('May 30, 2026 15:00:00').getTime();
-  function updateCountdown() {
-    var now = new Date().getTime();
-    var distance = targetDate - now;
-    if (distance < 0) return;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    var d = document.getElementById('days');
-    var h = document.getElementById('hours');
-    var m = document.getElementById('minutes');
-    var s = document.getElementById('seconds');
-    if (d) d.innerText = String(days);
-    if (h) h.innerText = String(hours);
-    if (m) m.innerText = String(minutes);
-    if (s) s.innerText = String(seconds);
-  }
-  setInterval(updateCountdown, 1000);
-  updateCountdown();
-
   window.scrollGalleryTrack = function (direction) {
     var track = document.getElementById('gallery-carousel');
     if (!track) return;
